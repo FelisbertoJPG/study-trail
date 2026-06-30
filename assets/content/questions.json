@@ -1,0 +1,939 @@
+{
+  "title": "Aplicativo de Estudos",
+  "source": "Conteúdo da faculdade — coletado em 2026-06-30",
+  "subjects": [
+    {
+      "id": "tec_moveis",
+      "name": "Tecnologias Móveis",
+      "subtitle": "Desenvolvimento de aplicativos Android",
+      "icon": "smartphone",
+      "color": "0xFF58CC02",
+      "modules": [
+        {
+          "id": "t001",
+          "title": "Fundamentos Mobile",
+          "subtitle": "Dispositivos, SOs, ciclo de dev, usabilidade e qualidade",
+          "icon": "smartphone",
+          "color": "0xFF58CC02",
+          "teaching": [
+            {
+              "title": "O que muda no mundo mobile",
+              "body": "O desenvolvimento móvel exige atenção às limitações de recursos do aparelho — processamento, memória e bateria. Além disso, o contexto de uso (localização, conectividade e a forma como o usuário interage) afeta diretamente a experiência. A limitação de energia é uma preocupação típica do MÓVEL, não do desktop/web.",
+              "code": null,
+              "linksTo": "Questão sobre os aspectos do desenvolvimento de aplicativos móveis."
+            },
+            {
+              "title": "Qualidade e testes funcionais",
+              "body": "A satisfação do usuário vem do equilíbrio entre funcionalidade, confiabilidade, usabilidade, eficiência, manutenção e portabilidade. Para garantir isso, usam-se testes funcionais, cujo objetivo é verificar se cada funcionalidade foi implementada corretamente e funciona como esperado.",
+              "code": null,
+              "linksTo": "Questão sobre o objetivo principal dos testes funcionais."
+            },
+            {
+              "title": "Heurísticas de Nielsen",
+              "body": "Nielsen listou heurísticas de usabilidade, entre elas:\n• Visibilidade do status do sistema\n• Correspondência com o mundo real\n• Controle e liberdade (desfazer/refazer)\n• Prevenção de erros\n• Ajudar a reconhecer, diagnosticar e recuperar de erros\n\nUma notificação \"1 excluída\" com a ação \"Desfazer\" deixa o usuário se RECUPERAR de uma ação indesejada.",
+              "code": null,
+              "linksTo": "Questão da notificação com botão \"Desfazer\"."
+            }
+          ],
+          "questions": [
+            {
+              "id": "t001_q1",
+              "difficulty": 1,
+              "prompt": "Na avaliação da qualidade de softwares móveis emprega-se a execução de testes funcionais. Estes testes têm por objetivo principal:",
+              "code": null,
+              "options": [
+                "Avaliar a experiência do usuário.",
+                "Testar a capacidade de comunicação do aplicativo.",
+                "Verificar a correta implementação e funcionamento das funcionalidades.",
+                "Examinar a interação do aplicativo com o hardware.",
+                "Medir o tempo de resposta do aplicativo."
+              ],
+              "answerIndex": 2,
+              "explanation": "Testes funcionais validam se cada funcionalidade foi implementada corretamente e se comporta conforme o esperado."
+            },
+            {
+              "id": "t001_q2",
+              "difficulty": 1,
+              "prompt": "O desenvolvimento móvel incorpora aspectos distintos dos dispositivos. Avalie:\nI - Tanto o desenvolvimento móvel quanto o web precisam considerar as limitações de energia dos dispositivos.\nII - O desenvolvimento móvel exige atenção às limitações de recursos (processamento e memória).\nIII - O contexto de uso (localização, conectividade, interações) afeta a experiência do app.\nQuais afirmações estão corretas?",
+              "code": null,
+              "options": ["II e III", "I e II", "Apenas I", "Apenas III", "Apenas II"],
+              "answerIndex": 0,
+              "explanation": "A limitação de energia é uma preocupação típica do MÓVEL (não do web), por isso a I está incorreta. II e III descrevem corretamente as características do desenvolvimento mobile."
+            },
+            {
+              "id": "t001_q3",
+              "difficulty": 2,
+              "prompt": "Uma funcionalidade exibe a notificação \"1 excluída\" com a ação \"Desfazer\". Segundo as heurísticas de usabilidade de Jakob Nielsen, qual aspecto é ilustrado por essa funcionalidade (feedback imediato + reverter ações indesejadas)?",
+              "code": null,
+              "options": [
+                "Correspondência entre o sistema e o mundo real.",
+                "Flexibilidade e eficiência no uso.",
+                "Visibilidade do status do sistema.",
+                "Reconhecer, diagnosticar e se recuperar de erros.",
+                "Prevenção de erros."
+              ],
+              "answerIndex": 3,
+              "explanation": "A opção \"Desfazer\" permite que o usuário se recupere de uma ação indesejada (exclusão), ilustrando a heurística \"Reconhecer, diagnosticar e se recuperar de erros\"."
+            }
+          ]
+        },
+        {
+          "id": "t002",
+          "title": "Ambiente & Kotlin",
+          "subtitle": "Android Studio e a linguagem Kotlin",
+          "icon": "code",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "Android Studio",
+              "body": "É a IDE oficial do Google, baseada no IntelliJ IDEA. Traz um emulador (testar apps sem aparelho físico), controle de versão integrado (Git, com GitHub/Bitbucket) e suporta tanto Java quanto Kotlin — não apenas \"Kotlin e Javascript\".",
+              "code": null,
+              "linksTo": "Questões sobre as funcionalidades do Android Studio."
+            },
+            {
+              "title": "Como testar um app",
+              "body": "Há três caminhos válidos:\n• AVD Manager — cria e gerencia emuladores de dispositivos Android;\n• Dispositivo físico conectado via USB com o modo desenvolvedor ativado;\n• Emuladores de terceiros, com recursos extras não presentes no AVD.",
+              "code": null,
+              "linksTo": "Questão sobre as opções de teste de aplicativos."
+            },
+            {
+              "title": "Kotlin: interoperável e seguro",
+              "body": "Kotlin é totalmente interoperável com Java (arquivos Java e Kotlin no mesmo projeto). Possui segurança nula no sistema de tipos: @Nullable/@NonNull evitam NullPointerException. É multiparadigma (orientada a objetos E funcional) — não é exclusivamente funcional.",
+              "code": "val segundoNome: String = \"Pedro\"  // não pode ser null\nval sobreNome: String? = null      // anulável (com ?)",
+              "linksTo": "Questão sobre as características da linguagem Kotlin."
+            }
+          ],
+          "questions": [
+            {
+              "id": "t002_q1",
+              "difficulty": 1,
+              "prompt": "Sobre as funcionalidades do Android Studio:\nI - Inclui um emulador para testar apps em diferentes dispositivos e versões sem hardware físico.\nII - Suporte integrado a controle de versão como Git.\nIII - Permite desenvolver aplicativos somente em Kotlin e Javascript.\nQuais estão corretas?",
+              "code": null,
+              "options": ["Apenas I e III", "Apenas II", "Apenas III", "Apenas I", "Apenas I e II"],
+              "answerIndex": 4,
+              "explanation": "O Android Studio suporta Java e Kotlin (não \"somente Kotlin e Javascript\"), então a III está errada. I e II são corretas."
+            },
+            {
+              "id": "t002_q2",
+              "difficulty": 1,
+              "prompt": "Entre as opções de teste de aplicativos no Android Studio, considere:\nI - Uso do Android Virtual Device (AVD) Manager para criar e gerenciar emuladores.\nII - Conexão de um dispositivo Android físico com o modo desenvolvedor habilitado.\nIII - Emprego de emuladores Android de terceiros.\nQuais são válidas?",
+              "code": null,
+              "options": ["Apenas II", "Apenas I", "Apenas I e II", "Apenas III", "Apenas I, II e III"],
+              "answerIndex": 4,
+              "explanation": "Todas as três opções são formas válidas de testar apps Android: emulador do AVD, dispositivo físico e emuladores de terceiros."
+            },
+            {
+              "id": "t002_q3",
+              "difficulty": 2,
+              "prompt": "Sobre a linguagem Kotlin:\nI - Foi projetada para ser totalmente interoperável com Java, permitindo usar bibliotecas Java e migrar código com facilidade.\nII - Incorpora no sistema de tipos a segurança nula (anotadores @Nullable e @NonNull), prevenindo erros de nulidade em tempo de compilação.\nIII - É uma linguagem exclusivamente funcional e não suporta outros paradigmas.\nQuais afirmações são corretas?",
+              "code": null,
+              "options": ["Apenas I", "I e II", "Apenas III", "I, II e III", "Apenas II"],
+              "answerIndex": 1,
+              "explanation": "Kotlin é interoperável com Java (I) e possui segurança nula no sistema de tipos (II). Ela é multiparadigma (orientada a objetos e funcional), então a III está errada."
+            }
+          ]
+        },
+        {
+          "id": "t003",
+          "title": "Interface & Acessibilidade",
+          "subtitle": "Views, ViewGroups, Layouts e acessibilidade",
+          "icon": "widgets",
+          "color": "0xFFCE82FF",
+          "teaching": [
+            {
+              "title": "View x ViewGroup",
+              "body": "A View é o componente com o qual o usuário interage ou que exibe algo (Button, TextView, EditText, ImageView). A ViewGroup é um contêiner invisível que organiza as Views na tela. Importante: a classe ViewGroup é uma subclasse (estende) da classe View.",
+              "code": null,
+              "linksTo": "Questão sobre View, ViewGroup e ConstraintLayout."
+            },
+            {
+              "title": "Layouts e ConstraintLayout",
+              "body": "Os layouts (LinearLayout, ConstraintLayout, FrameLayout, RelativeLayout) são tipos de ViewGroup — eles organizam outras views. Logo, o ConstraintLayout é um ViewGroup, e não uma View. O ConstraintLayout cria layouts complexos com restrições entre os elementos.",
+              "code": null,
+              "linksTo": "Questão que afirma (erradamente) que ConstraintLayout é uma View."
+            },
+            {
+              "title": "Atributos de uma View",
+              "body": "Numa TextView:\n• android:id — opcional, serve de referência;\n• layout_width / layout_height — obrigatórios em toda View, definem o tamanho (wrap_content, match_parent);\n• text, textColor, textSize — personalizam o conteúdo e a aparência do texto.",
+              "code": "<TextView\n    android:id=\"@+id/description\"\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:text=\"@string/description\"\n    android:textColor=\"@color/colorPrimaryDark\"\n    android:textSize=\"16sp\" />",
+              "linksTo": "Questão sobre os atributos da TextView."
+            },
+            {
+              "title": "Acessibilidade no Android",
+              "body": "Boas práticas oficiais:\n• contentDescription=\"@null\" em imagens puramente decorativas;\n• android:accessibilityHeading para marcar cabeçalhos;\n• área tocável mínima de 48dp x 48dp em cada elemento interativo.",
+              "code": null,
+              "linksTo": "Questão sobre práticas de acessibilidade."
+            }
+          ],
+          "questions": [
+            {
+              "id": "t003_q1",
+              "difficulty": 2,
+              "prompt": "Analisando o XML de uma TextView abaixo, qual opção descreve corretamente o propósito de cada atributo?",
+              "code": "<TextView\n    android:id=\"@+id/description\"\n    android:layout_width=\"wrap_content\"\n    android:layout_height=\"wrap_content\"\n    android:text=\"@string/description\"\n    android:textColor=\"@color/colorPrimaryDark\"\n    android:textSize=\"16sp\" />",
+              "options": [
+                "android:id é opcional e serve apenas como referência; layout_width e layout_height são obrigatórios e estabelecem o tamanho da View; text, textColor e textSize personalizam o texto.",
+                "android:id serve para definir o tipo da View; layout_width e layout_height são propriedades de alinhamento; text, textColor e textSize são atributos de estilo do texto.",
+                "android:id é obrigatório e identifica unicamente a View; layout_width e layout_height definem dimensões fixas; text, textColor e textSize controlam a aparência do texto.",
+                "android:id é único e obrigatório; layout_width e layout_height especificam o tamanho da View; text, textColor e textSize definem o conteúdo e a aparência.",
+                "android:id é opcional e utilizado para animação; layout_width e layout_height podem ser omitidos; text, textColor e textSize definem a localização do texto na tela."
+              ],
+              "answerIndex": 0,
+              "explanation": "id é opcional (referência). layout_width/layout_height são obrigatórios em toda View e definem o tamanho. text/textColor/textSize personalizam o conteúdo e a aparência do texto."
+            },
+            {
+              "id": "t003_q2",
+              "difficulty": 2,
+              "prompt": "Sobre práticas de acessibilidade no Android:\nI - Atribuir \"@null\" ao android:contentDescription em imagens puramente decorativas.\nII - Utilizar android:accessibilityHeading para destacar cabeçalhos de texto.\nIII - Garantir área tocável mínima de 48dp x 48dp para cada elemento interativo.\nQuais estão corretas?",
+              "code": null,
+              "options": ["Apenas III", "Apenas II", "I, II e III", "I e II", "Apenas I"],
+              "answerIndex": 2,
+              "explanation": "As três são recomendações oficiais de acessibilidade do Android."
+            },
+            {
+              "id": "t003_q3",
+              "difficulty": 2,
+              "prompt": "Sobre os componentes de interface no Android:\nI - Uma View é um componente de interface que pode exibir itens ou com o qual o usuário interage diretamente.\nII - ViewGroup é um contêiner invisível responsável pela organização e layout das Views.\nIII - ConstraintLayout é considerado um exemplo de View.\nQuais estão corretas?",
+              "code": null,
+              "options": ["I e II", "I e III", "Apenas III", "Apenas II", "Apenas I"],
+              "answerIndex": 0,
+              "explanation": "View e ViewGroup estão descritos corretamente (I e II). ConstraintLayout é um ViewGroup (contêiner), não uma View, então a III está errada."
+            }
+          ]
+        },
+        {
+          "id": "t004",
+          "title": "Activities & Navegação",
+          "subtitle": "Ciclo de vida, Intents e passagem de dados",
+          "icon": "sync_alt",
+          "color": "0xFFFF9600",
+          "teaching": [
+            {
+              "title": "O que é uma Activity",
+              "body": "Uma Activity é um módulo único e independente, ligado a uma tela de interface. Um aplicativo pode ter uma ou mais Activities (ex.: uma para listar, outra para cadastrar). Toda Activity estende a classe Activity (ou implementações como AppCompatActivity).",
+              "code": null,
+              "linksTo": "Questão sobre as características de uma Activity."
+            },
+            {
+              "title": "O ciclo de vida (callbacks)",
+              "body": "Decore a ordem e o papel de cada callback:\n• onCreate — cria e inicializa a Activity (setContentView). Roda uma vez.\n• onStart — torna a Activity VISÍVEL ao usuário.\n• onResume — traz para o PRIMEIRO PLANO, deixando-a interativa.\n• onPause — a Activity deixa o primeiro plano.\n• onStop — a Activity NÃO está mais visível.\n• onDestroy — a Activity é destruída.",
+              "code": null,
+              "linksTo": "Várias questões sobre qual callback faz cada coisa (criar/visível/primeiro plano/não-visível)."
+            },
+            {
+              "title": "Intent e passagem de dados",
+              "body": "Uma Intent inicia outra Activity e pode carregar dados com putExtra(). Quando o dado é um objeto que implementa Parcelable, na Activity de destino ele é recuperado com getParcelableExtra(chave).",
+              "code": "// Enviando\nval intent = Intent(this, ActivityB::class.java)\nintent.putExtra(\"userKey\", user)\nstartActivity(intent)\n\n// Recebendo (na ActivityB)\nval user = intent.getParcelableExtra(\"userKey\")",
+              "linksTo": "Questão sobre como recuperar um objeto Parcelable da Intent."
+            }
+          ],
+          "questions": [
+            {
+              "id": "t004_q1",
+              "difficulty": 1,
+              "prompt": "Qual callback do ciclo de vida é invocado para criar uma atividade?",
+              "code": null,
+              "options": ["onPause", "onResume", "onCreate", "onDestroy", "onStart"],
+              "answerIndex": 2,
+              "explanation": "onCreate() é chamado quando a Activity é criada; nele é feita a inicialização e o setContentView()."
+            },
+            {
+              "id": "t004_q2",
+              "difficulty": 1,
+              "prompt": "Qual é o callback responsável por tornar uma atividade visível ao usuário?",
+              "code": null,
+              "options": ["onStop", "onCreate", "onResume", "onStart", "onPause"],
+              "answerIndex": 3,
+              "explanation": "onStart() é chamado quando a Activity se torna visível ao usuário (mas ainda não interativa em primeiro plano)."
+            },
+            {
+              "id": "t004_q3",
+              "difficulty": 1,
+              "prompt": "Qual é o callback chamado quando a Activity deixa de estar visível para o usuário?",
+              "code": null,
+              "options": ["onStop", "onResume", "onPause", "onCreate", "onStart"],
+              "answerIndex": 0,
+              "explanation": "onStop() é invocado quando a Activity deixa de estar visível (totalmente coberta ou em segundo plano)."
+            },
+            {
+              "id": "t004_q4",
+              "difficulty": 1,
+              "prompt": "Qual callback é responsável por trazer a aplicação para o primeiro plano, tornando-a disponível para interação do usuário?",
+              "code": null,
+              "options": ["onCreate", "onPause", "onResume", "onStart", "onStop"],
+              "answerIndex": 2,
+              "explanation": "onResume() coloca a Activity em primeiro plano e a torna interativa para o usuário."
+            },
+            {
+              "id": "t004_q5",
+              "difficulty": 2,
+              "prompt": "Sobre as características de uma Activity no Android:\nI - Uma aplicação Android deve possuir mais de uma Activity.\nII - Uma Activity deve funcionar como um módulo único e independente.\nIII - Uma Activity é uma extensão da classe Activity no Android.\nQuais estão corretas?",
+              "code": null,
+              "options": ["Apenas II", "Apenas I", "II e III", "I e II"],
+              "answerIndex": 2,
+              "explanation": "Um app pode ter UMA ou mais Activities (a I força \"deve possuir mais de uma\", o que é falso). II e III estão corretas: a Activity é um módulo independente e estende a classe Activity (ou AppCompatActivity)."
+            },
+            {
+              "id": "t004_q6",
+              "difficulty": 2,
+              "prompt": "Na Activity A, um objeto User (Parcelable) é enviado via intent.putExtra(\"userKey\", user). Na Activity B, qual método recupera esse objeto da Intent?",
+              "code": "// Activity A\nval intent = Intent(this, ActivityB::class.java)\nval user = User(\"John Doe\", 30)\nintent.putExtra(\"userKey\", user)\nstartActivity(intent)",
+              "options": [
+                "getString(\"userKey\")",
+                "get(\"userKey\")",
+                "getObject(\"userKey\")",
+                "getParcelable(\"userKey\")",
+                "getParcelableExtra(\"userKey\")"
+              ],
+              "answerIndex": 4,
+              "explanation": "Objetos Parcelable colocados com putExtra são recuperados na Activity de destino com intent.getParcelableExtra(chave)."
+            }
+          ]
+        },
+        {
+          "id": "t005",
+          "title": "Persistência de Dados",
+          "subtitle": "SQLite, SQLiteOpenHelper, CRUD e SharedPreferences",
+          "icon": "storage",
+          "color": "0xFFFF4B4B",
+          "teaching": [
+            {
+              "title": "Formas de persistir dados",
+              "body": "O Android oferece mecanismos com propósitos diferentes:\n• SharedPreferences — guarda coleções de pares chave-valor primitivos (configurações, flags, estados simples);\n• Arquivos — texto em armazenamento interno/externo;\n• SQLite — banco de dados local robusto, sem servidor nem configuração.",
+              "code": null,
+              "linksTo": "Questões sobre SharedPreferences e o componente de SQLite."
+            },
+            {
+              "title": "SQLiteOpenHelper",
+              "body": "É a classe que se estende para criar, abrir e gerenciar o banco SQLite. Tem dois métodos principais: onCreate (executado na 1ª vez, cria as tabelas) e onUpgrade (atualiza o esquema quando a versão muda).",
+              "code": "class DbHelper(context: Context) :\n    SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION)",
+              "linksTo": "Questão sobre o componente que cria/gerencia o banco."
+            },
+            {
+              "title": "CRUD com SQLiteDatabase",
+              "body": "• insert() recebe um ContentValues (pares coluna→valor);\n• query() executa consultas e retorna um Cursor;\n• update() usa novos ContentValues + cláusula WHERE;\n• sempre feche o Cursor e o banco para evitar vazamentos de memória.",
+              "code": "val db = banco.writableDatabase\nval values = ContentValues()\nvalues.put(CLIENTE_NOME, cliente.nome)\ndb.insert(TABLE_CLIENTES, null, values)",
+              "linksTo": "Questão sobre as operações CRUD no SQLite."
+            },
+            {
+              "title": "readable x writable",
+              "body": "getWritableDatabase() abre o banco para leitura e escrita. Já getReadableDatabase() normalmente retorna a MESMA instância de escrita — só cai para somente-leitura se não conseguir abrir para escrita (ex.: disco cheio).",
+              "code": "val db = helper.readableDatabase",
+              "linksTo": "Questão sobre o comportamento de getReadableDatabase()."
+            }
+          ],
+          "questions": [
+            {
+              "id": "t005_q1",
+              "difficulty": 1,
+              "prompt": "No uso básico de SQLite no Android com Kotlin, qual é o principal componente que permite a criação, abertura e gerenciamento do banco de dados?",
+              "code": null,
+              "options": ["SQLiteOpenHelper", "Room Database", "File System", "SharedPreferences", "ContentProvider"],
+              "answerIndex": 0,
+              "explanation": "SQLiteOpenHelper é a classe auxiliar para criar, abrir, gerenciar versões e atualizar o banco SQLite."
+            },
+            {
+              "id": "t005_q2",
+              "difficulty": 2,
+              "prompt": "Para armazenar pequenas quantidades de dados não estruturados (configurações, flags, estados de interface) como pares chave-valor primitivos, qual é o principal mecanismo de persistência do Android?",
+              "code": null,
+              "options": ["Room Database", "ContentProvider", "File System", "SQLiteOpenHelper", "SharedPreferences"],
+              "answerIndex": 4,
+              "explanation": "SharedPreferences é o mecanismo leve para persistir coleções de pares chave-valor de tipos primitivos."
+            },
+            {
+              "id": "t005_q3",
+              "difficulty": 3,
+              "prompt": "Sobre a interação com SQLite no Android com Kotlin:\nI - insert() do SQLiteDatabase recebe um ContentValues com os pares chave-valor.\nII - query() do SQLiteDatabase executa consultas e retorna um Cursor.\nIII - Fechar o Cursor e o SQLiteDatabase após as operações evita vazamentos de memória.\nIV - update() do SQLiteDatabase atualiza registros usando novos ContentValues e uma cláusula WHERE.\nQuais assertivas estão corretas?",
+              "code": null,
+              "options": [
+                "Apenas I e II.",
+                "Apenas I, II e III.",
+                "I, II, III e IV.",
+                "Apenas I, III e IV.",
+                "Apenas II, III e IV."
+              ],
+              "answerIndex": 2,
+              "explanation": "Todas as quatro descrevem corretamente as boas práticas de CRUD e gerenciamento de recursos com SQLite no Android."
+            },
+            {
+              "id": "t005_q4",
+              "difficulty": 3,
+              "prompt": "Considere val db = helper.readableDatabase. Sobre getReadableDatabase() (equivalente a readableDatabase):\nI - O método sempre retorna uma instância somente leitura.\nII - Caso não seja possível abrir para escrita (ex.: falta de espaço), retorna uma instância somente leitura.\nIII - Se não houver problema de acesso, pode retornar uma instância de leitura e escrita, igual à de getWritableDatabase().\nAssinale a alternativa CORRETA:",
+              "code": "val db = helper.readableDatabase",
+              "options": [
+                "Apenas a afirmação I está correta.",
+                "Apenas a afirmação III está correta.",
+                "Apenas as afirmações II e III estão corretas.",
+                "Apenas as afirmações I e II estão corretas.",
+                "Todas as afirmações estão corretas."
+              ],
+              "answerIndex": 2,
+              "explanation": "getReadableDatabase() normalmente retorna a MESMA instância de escrita; só cai para somente-leitura quando não consegue abrir para escrita. Logo a I é falsa, e II e III estão corretas."
+            }
+          ]
+        },
+        {
+          "id": "t006",
+          "title": "Rede & Assíncrono",
+          "subtitle": "Permissões, requisições HTTP, JSON e tarefas assíncronas",
+          "icon": "cloud",
+          "color": "0xFF2B70C9",
+          "teaching": [
+            {
+              "title": "Consumindo uma API REST",
+              "body": "Apps móveis frequentemente buscam dados na internet via web services (ex.: previsão do tempo). A troca de dados acontece em JSON ou XML, e o ponto de acesso do serviço é o endpoint (uma URL). O JSON é o padrão de mercado por ser mais leve e rápido que o XML.",
+              "code": null,
+              "linksTo": "Questão sobre o formato padrão de troca de dados com web services."
+            },
+            {
+              "title": "Permissão de Internet",
+              "body": "Para acessar a rede, o app precisa declarar as permissões no arquivo AndroidManifest.xml. Sem isso, a requisição falha.",
+              "code": "<uses-permission android:name=\"android.permission.INTERNET\" />\n<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "linksTo": "Questão sobre a permissão necessária para acessar a internet."
+            },
+            {
+              "title": "Tarefas assíncronas",
+              "body": "A Thread principal (UI) cuida da interface. Se ela ficar ocupada com uma requisição demorada, a tela CONGELA. Por isso as requisições rodam em outra thread (tarefa assíncrona). A AsyncTask tem as etapas: onPreExecute → doInBackground (em segundo plano) → onProgressUpdate → onPostExecute (publica o resultado de volta na UI).",
+              "code": null,
+              "linksTo": "Questões sobre por que usar tarefas assíncronas e sobre os métodos da AsyncTask."
+            }
+          ],
+          "questions": [
+            {
+              "id": "t006_q1",
+              "difficulty": 1,
+              "prompt": "Qual permissão deve ser declarada no AndroidManifest.xml para que o aplicativo consiga acessar a internet?",
+              "code": null,
+              "options": [
+                "android.permission.INTERNET",
+                "android.permission.CAMERA",
+                "android.permission.READ_CONTACTS",
+                "android.permission.ACCESS_FINE_LOCATION",
+                "android.permission.WRITE_EXTERNAL_STORAGE"
+              ],
+              "answerIndex": 0,
+              "explanation": "A permissão android.permission.INTERNET (geralmente junto de ACCESS_NETWORK_STATE) é obrigatória no AndroidManifest para acessar a rede."
+            },
+            {
+              "id": "t006_q2",
+              "difficulty": 1,
+              "prompt": "Qual é o formato padrão de mercado para a troca de informações entre o dispositivo e um web service, por ser mais leve e rápido que o XML?",
+              "code": null,
+              "options": ["JSON", "CSV", "YAML", "XML", "HTML"],
+              "answerIndex": 0,
+              "explanation": "O JSON (notação de objeto JavaScript) tornou-se o padrão por ser menos verboso e mais rápido de interpretar que o XML."
+            },
+            {
+              "id": "t006_q3",
+              "difficulty": 2,
+              "prompt": "Por que as requisições a um web service devem ser executadas em uma tarefa assíncrona (em outra thread)?",
+              "code": null,
+              "options": [
+                "Para não bloquear/congelar a Thread principal (UI) enquanto a requisição é processada.",
+                "Porque a Thread principal não tem permissão de acessar a internet.",
+                "Para que o app consuma mais memória e responda mais rápido.",
+                "Porque o JSON só pode ser lido em segundo plano.",
+                "Para evitar declarar a permissão de internet no Manifest."
+              ],
+              "answerIndex": 0,
+              "explanation": "A Thread de UI cuida da interface; se ficar ocupada com uma requisição demorada, a tela congela. Por isso a requisição roda em segundo plano (tarefa assíncrona)."
+            },
+            {
+              "id": "t006_q4",
+              "difficulty": 2,
+              "prompt": "Na AsyncTask, qual método executa o processamento pesado (como a requisição de rede) em segundo plano?",
+              "code": null,
+              "options": ["doInBackground", "onPreExecute", "onPostExecute", "onProgressUpdate", "onCreate"],
+              "answerIndex": 0,
+              "explanation": "doInBackground() roda em uma thread de segundo plano, ideal para tarefas demoradas como requisições de rede."
+            },
+            {
+              "id": "t006_q5",
+              "difficulty": 2,
+              "prompt": "Após a AsyncTask terminar o processamento, qual método publica o resultado de volta na Thread da interface do usuário (UI)?",
+              "code": null,
+              "options": ["onPostExecute", "doInBackground", "onPreExecute", "onProgressUpdate", "onDestroy"],
+              "answerIndex": 0,
+              "explanation": "onPostExecute() é executado na UI Thread após o doInBackground, permitindo atualizar a interface com o resultado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mod_software",
+      "name": "Modelagem de Software",
+      "subtitle": "Modelagem, UML e padrões de projeto",
+      "icon": "design_services",
+      "color": "0xFF1CB0F6",
+      "modules": [
+        {
+          "id": "ms001",
+          "title": "Fundamentos da Modelagem",
+          "subtitle": "Objetivos, princípios, DFD e dicionário de dados",
+          "icon": "insights",
+          "color": "0xFF58CC02",
+          "teaching": [
+            {
+              "title": "Por que modelar",
+              "body": "A modelagem alcança quatro objetivos:\n1. Visualizar o sistema como ele é ou como queremos que seja;\n2. Especificar a estrutura ou o comportamento do sistema;\n3. Guiar a construção do sistema;\n4. Documentar as decisões tomadas.\n\nQuanto mais complexo o sistema, mais importante é modelar — pois não conseguimos compreendê-lo por inteiro.",
+              "code": null,
+              "linksTo": "Questão sobre os objetivos da modelagem."
+            },
+            {
+              "title": "Princípios da modelagem",
+              "body": "• A escolha de quais modelos criar influencia profundamente como o problema é atacado;\n• Cada modelo pode ser expresso em diferentes níveis de precisão (nem sempre o mais detalhado);\n• Os melhores modelos têm conexão com a realidade;\n• Nenhum modelo único é suficiente — sistemas precisam de um conjunto de modelos com pontos de vista diferentes.",
+              "code": null,
+              "linksTo": "Questão sobre os princípios da modelagem."
+            },
+            {
+              "title": "DFD e dicionário de dados",
+              "body": "O Diagrama de Fluxo de Dados (DFD) modela como os dados percorrem o sistema. O dicionário de dados descreve os dados (campos, tipos, significados). Os diagramas se dividem em estruturais (aspecto estático) e comportamentais (aspecto dinâmico).",
+              "code": null,
+              "linksTo": "Apoia as questões sobre tipos de diagramas."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ms001_q1",
+              "difficulty": 1,
+              "prompt": "Por meio da modelagem, alcançamos quatro objetivos. Avalie:\nI - Visualizar o sistema como ele é ou como queremos que seja.\nII - Especificar a estrutura ou o comportamento do sistema.\nIII - Guiar a construção do sistema.\nIV - Documentar as decisões tomadas.\nQuais estão corretas?",
+              "code": null,
+              "options": [
+                "Apenas I e II.",
+                "Apenas II e III.",
+                "I, II, III e IV.",
+                "Apenas I, III e IV.",
+                "Apenas III e IV."
+              ],
+              "answerIndex": 2,
+              "explanation": "Os quatro objetivos da modelagem são: visualizar, especificar, guiar a construção e documentar decisões."
+            },
+            {
+              "id": "ms001_q2",
+              "difficulty": 1,
+              "prompt": "Por que construímos modelos de sistemas complexos?",
+              "code": null,
+              "options": [
+                "Porque não conseguimos compreender o sistema em sua totalidade.",
+                "Porque a linguagem de programação exige um modelo antes do código.",
+                "Porque modelos substituem completamente a documentação técnica.",
+                "Porque é proibido programar sem um diagrama aprovado.",
+                "Porque o cliente sempre entende melhor um modelo do que o software."
+              ],
+              "answerIndex": 0,
+              "explanation": "Modelamos sistemas complexos justamente porque não conseguimos compreendê-los por completo de uma só vez."
+            },
+            {
+              "id": "ms001_q3",
+              "difficulty": 2,
+              "prompt": "Sobre os princípios da modelagem:\nI - A escolha de quais modelos criar influencia profundamente como o problema é atacado.\nII - Todo modelo deve sempre ser expresso no nível máximo de precisão.\nIII - Nenhum modelo único é suficiente; os melhores sistemas usam um conjunto de modelos.\nQuais estão corretas?",
+              "code": null,
+              "options": ["I e III", "I e II", "Apenas II", "II e III", "Apenas I"],
+              "answerIndex": 0,
+              "explanation": "I e III são corretas. A II é falsa: o nível de precisão varia conforme a necessidade — às vezes um modelo simples basta, às vezes é preciso detalhar."
+            }
+          ]
+        },
+        {
+          "id": "ms002",
+          "title": "Introdução à UML",
+          "subtitle": "Blocos de construção, relacionamentos e OO",
+          "icon": "account_tree",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "O que significa UML",
+              "body": "UML = Unified Modeling Language:\n• Linguagem — permite comunicar sobre requisitos e sistema;\n• Modelo — representação que captura um conjunto de ideias (abstrações) sobre o assunto;\n• Unificado — reúne as melhores práticas de engenharia da indústria.",
+              "code": null,
+              "linksTo": "Questão sobre o significado dos termos da UML."
+            },
+            {
+              "title": "Modelo conceitual e blocos",
+              "body": "O modelo conceitual da UML tem três elementos: blocos de construção, regras e mecanismos comuns.\nExistem 4 tipos de coisas: estruturais, comportamentais, de agrupamento e de anotação.",
+              "code": null,
+              "linksTo": "Questão sobre os três elementos do modelo conceitual."
+            },
+            {
+              "title": "Os 4 relacionamentos da UML",
+              "body": "Dependência, Associação, Generalização e Realização. São os blocos de construção relacionais básicos da UML.",
+              "code": null,
+              "linksTo": "Questão sobre os tipos de relacionamentos."
+            },
+            {
+              "title": "Pilares da Orientação a Objetos",
+              "body": "• Abstração — oculta os detalhes de implementação do usuário;\n• Encapsulamento — liga os dados e os protege do mundo exterior;\n• Herança — classes filhas herdam propriedades das classes pais;\n• Polimorfismo — funções/entidades podem existir em formas diferentes.",
+              "code": null,
+              "linksTo": "Questões sobre abstração e encapsulamento."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ms002_q1",
+              "difficulty": 1,
+              "prompt": "Na UML, o termo \"Modelo\" refere-se a:",
+              "code": null,
+              "options": [
+                "A representação de algo que captura um conjunto de ideias (abstrações) sobre o assunto.",
+                "A linguagem de programação usada para implementar o sistema.",
+                "O conjunto de regras de sintaxe de um diagrama.",
+                "O banco de dados onde o sistema é armazenado.",
+                "O documento de requisitos assinado pelo cliente."
+              ],
+              "answerIndex": 0,
+              "explanation": "Modelo é a representação de algo que captura abstrações (ideias) sobre o assunto modelado."
+            },
+            {
+              "id": "ms002_q2",
+              "difficulty": 2,
+              "prompt": "Quais são os quatro tipos de relacionamentos da UML?",
+              "code": null,
+              "options": [
+                "Dependência, Associação, Generalização e Realização.",
+                "Herança, Composição, Agregação e Associação.",
+                "Inclusão, Extensão, Generalização e Dependência.",
+                "Classe, Objeto, Pacote e Componente.",
+                "Sequência, Atividade, Estado e Caso de uso."
+              ],
+              "answerIndex": 0,
+              "explanation": "Os 4 relacionamentos da UML são: Dependência, Associação, Generalização e Realização."
+            },
+            {
+              "id": "ms002_q3",
+              "difficulty": 2,
+              "prompt": "Qual pilar da orientação a objetos é definido como \"o mecanismo pelo qual os detalhes de implementação são ocultados do usuário\"?",
+              "code": null,
+              "options": ["Abstração", "Encapsulamento", "Herança", "Polimorfismo", "Associação"],
+              "answerIndex": 0,
+              "explanation": "Abstração é ocultar os detalhes de implementação. (Encapsulamento é ligar e proteger os dados; não confundir.)"
+            },
+            {
+              "id": "ms002_q4",
+              "difficulty": 1,
+              "prompt": "O modelo conceitual da UML se baseia em três elementos principais. São eles:",
+              "code": null,
+              "options": [
+                "Blocos de construção, regras e mecanismos comuns.",
+                "Classes, objetos e pacotes.",
+                "Atores, casos de uso e sistema.",
+                "Diagramas, métricas e padrões.",
+                "Linguagem, modelo e código."
+              ],
+              "answerIndex": 0,
+              "explanation": "São os blocos de construção, as regras e os mecanismos comuns."
+            }
+          ]
+        },
+        {
+          "id": "ms003",
+          "title": "Diagramas Estruturais",
+          "subtitle": "Diagrama de classes, de objetos e relacionamentos",
+          "icon": "schema",
+          "color": "0xFFCE82FF",
+          "teaching": [
+            {
+              "title": "Diagrama de classes",
+              "body": "Mostra a estrutura estática do sistema: as classes com seus atributos, métodos e os relacionamentos entre elas. É a base do projeto orientado a objetos.",
+              "code": null,
+              "linksTo": "Questão sobre classificação dos diagramas estruturais."
+            },
+            {
+              "title": "Diagrama de objetos",
+              "body": "Usa notação parecida com a do diagrama de classes, mas representa instâncias específicas das classes e seus relacionamentos em um determinado ponto no tempo (um \"retrato\" do sistema).",
+              "code": null,
+              "linksTo": "Questão sobre o que o diagrama de objetos representa."
+            },
+            {
+              "title": "Associação x Dependência",
+              "body": "Toda associação implica uma dependência. Como existem muitas dependências num sistema, representamos apenas as essenciais para a compreensão. A dependência é uma relação mais fraca/transitória que a associação.",
+              "code": null,
+              "linksTo": "Questão sobre associação e dependência."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ms003_q1",
+              "difficulty": 2,
+              "prompt": "Qual é a principal diferença entre um diagrama de classes e um diagrama de objetos?",
+              "code": null,
+              "options": [
+                "O de objetos mostra instâncias específicas das classes em um ponto do tempo; o de classes mostra a estrutura (a abstração).",
+                "O de classes mostra instâncias e o de objetos mostra a estrutura abstrata.",
+                "Ambos mostram exatamente a mesma coisa, mudando apenas a cor.",
+                "O de objetos é comportamental e o de classes é estrutural.",
+                "O de classes só existe em tempo de execução."
+              ],
+              "answerIndex": 0,
+              "explanation": "O diagrama de objetos representa instâncias reais das classes em um instante; o de classes representa a estrutura/abstração."
+            },
+            {
+              "id": "ms003_q2",
+              "difficulty": 1,
+              "prompt": "Um diagrama de objetos representa:",
+              "code": null,
+              "options": [
+                "Instâncias específicas de classes e seus relacionamentos em um determinado ponto no tempo.",
+                "O fluxo de trabalho e as atividades sequenciais do sistema.",
+                "As interações entre atores e o sistema.",
+                "A ordem temporal das mensagens trocadas entre objetos.",
+                "Os requisitos não funcionais do sistema."
+              ],
+              "answerIndex": 0,
+              "explanation": "O diagrama de objetos mostra instâncias (objetos) e seus relacionamentos num ponto específico do tempo."
+            },
+            {
+              "id": "ms003_q3",
+              "difficulty": 2,
+              "prompt": "Sobre associação e dependência na UML:\nI - Toda associação implica uma dependência.\nII - Representamos apenas as dependências essenciais para a compreensão do sistema.\nIII - Associação e dependência nunca têm qualquer relação entre si.\nQuais estão corretas?",
+              "code": null,
+              "options": ["I e II", "I e III", "Apenas III", "II e III", "Apenas I"],
+              "answerIndex": 0,
+              "explanation": "I e II são corretas. A III é falsa: toda associação implica uma dependência, logo elas se relacionam."
+            },
+            {
+              "id": "ms003_q4",
+              "difficulty": 1,
+              "prompt": "Os diagramas de classes e de objetos são classificados como diagramas:",
+              "code": null,
+              "options": ["Estruturais", "Comportamentais", "De interação", "De implantação dinâmica", "De fluxo de dados"],
+              "answerIndex": 0,
+              "explanation": "Ambos representam o aspecto estático do sistema, sendo diagramas estruturais."
+            }
+          ]
+        },
+        {
+          "id": "ms004",
+          "title": "Diagrama de Caso de Uso",
+          "subtitle": "Atores, casos de uso, include e extend",
+          "icon": "person",
+          "color": "0xFFFF9600",
+          "teaching": [
+            {
+              "title": "Para que serve",
+              "body": "O diagrama de caso de uso é comportamental e mostra as interações observáveis entre os atores e o sistema. É um ótimo apoio para encontrar e definir requisitos. Seus elementos: o sistema, os casos de uso e os atores.",
+              "code": null,
+              "linksTo": "Questão sobre a classificação do diagrama de caso de uso."
+            },
+            {
+              "title": "Ator e Caso de uso",
+              "body": "• Ator — quem usa o sistema (um papel; está sempre fora do sistema). Pode ser um usuário humano ou outro sistema.\n• Caso de uso — o que os atores podem fazer no sistema.",
+              "code": null,
+              "linksTo": "Questão sobre o que é um ator."
+            },
+            {
+              "title": "include x extend",
+              "body": "• include — comportamento obrigatório, reutilizado (sempre incluído pelo caso base);\n• extend (estender) — funcionalidade OPCIONAL que expande um caso de uso base; o caso base decide se o estendido executa, e ambos podem rodar separadamente.",
+              "code": null,
+              "linksTo": "Questões sobre os relacionamentos include e extend."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ms004_q1",
+              "difficulty": 1,
+              "prompt": "Em um diagrama de caso de uso, o ATOR representa:",
+              "code": null,
+              "options": [
+                "Quem usa o sistema (um papel), estando sempre fora do escopo do sistema.",
+                "Uma função interna executada pelo banco de dados.",
+                "Uma instância específica de uma classe em um ponto do tempo.",
+                "A ordem das mensagens trocadas entre objetos.",
+                "Um atributo de uma classe do sistema."
+              ],
+              "answerIndex": 0,
+              "explanation": "O ator é um papel de quem interage com o sistema (humano ou outro sistema) e está sempre fora do escopo modelado."
+            },
+            {
+              "id": "ms004_q2",
+              "difficulty": 1,
+              "prompt": "O diagrama de caso de uso é classificado como um diagrama:",
+              "code": null,
+              "options": ["Comportamental", "Estrutural", "De classes", "De implantação", "De objetos"],
+              "answerIndex": 0,
+              "explanation": "O caso de uso enfatiza o comportamento dinâmico do sistema, sendo um diagrama comportamental."
+            },
+            {
+              "id": "ms004_q3",
+              "difficulty": 2,
+              "prompt": "Qual relacionamento representa uma funcionalidade OPCIONAL que expande um caso de uso base, sendo que o caso base decide se ela será executada?",
+              "code": null,
+              "options": ["extend (estender)", "include (incluir)", "generalização", "associação", "realização"],
+              "answerIndex": 0,
+              "explanation": "O relacionamento extend conecta um caso opcional a um caso base; o base decide se o estendido executa, e ambos podem rodar separadamente."
+            },
+            {
+              "id": "ms004_q4",
+              "difficulty": 2,
+              "prompt": "Qual relacionamento representa um comportamento OBRIGATÓRIO e reutilizável, sempre incorporado por um caso de uso base?",
+              "code": null,
+              "options": ["include (incluir)", "extend (estender)", "dependência", "associação", "generalização"],
+              "answerIndex": 0,
+              "explanation": "O include representa um comportamento obrigatório e reutilizado, que é sempre incluído pelo caso de uso base."
+            }
+          ]
+        },
+        {
+          "id": "ms005",
+          "title": "Atividades & Sequência",
+          "subtitle": "Diagrama de atividades e de sequência",
+          "icon": "timeline",
+          "color": "0xFFFF4B4B",
+          "teaching": [
+            {
+              "title": "Atividades: o \"Como\"",
+              "body": "O diagrama de atividades modela o fluxo de trabalho — condições, restrições, atividades sequenciais e simultâneas. Em resumo: o caso de uso mostra \"O QUÊ\" o sistema faz; o diagrama de atividades mostra \"COMO\".",
+              "code": null,
+              "linksTo": "Questão sobre a diferença entre caso de uso e atividades."
+            },
+            {
+              "title": "Diagrama de sequência",
+              "body": "É um diagrama de interação que mostra os objetos como linhas de vida ao longo do tempo, com as interações representadas como mensagens (setas) em ordem sequencial. Bom para ver quais objetos se comunicam e o que dispara cada comunicação.",
+              "code": null,
+              "linksTo": "Questões sobre o diagrama de sequência."
+            },
+            {
+              "title": "Linhas de vida e mensagens",
+              "body": "Cada participante (instância) é uma linha de vida, nomeada no formato \"nomeInstância : NomeClasse\". A comunicação entre objetos é representada por mensagens (setas), em ordem sequencial. Linhas de vida e mensagens formam o núcleo do diagrama.",
+              "code": null,
+              "linksTo": "Questões sobre linhas de vida e mensagens."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ms005_q1",
+              "difficulty": 2,
+              "prompt": "Qual a diferença entre um diagrama de caso de uso e um diagrama de atividades?",
+              "code": null,
+              "options": [
+                "O diagrama de atividades mostra \"COMO\" (o fluxo); o caso de uso mostra \"O QUÊ\" o sistema faz.",
+                "O diagrama de atividades mostra \"O QUÊ\"; o caso de uso mostra \"COMO\".",
+                "Ambos são diagramas estruturais e mostram classes.",
+                "O diagrama de atividades só representa instâncias em um ponto do tempo.",
+                "Não há diferença; são sinônimos."
+              ],
+              "answerIndex": 0,
+              "explanation": "O caso de uso descreve O QUÊ o sistema faz; o diagrama de atividades descreve COMO (o fluxo de trabalho)."
+            },
+            {
+              "id": "ms005_q2",
+              "difficulty": 1,
+              "prompt": "O que um diagrama de sequência representa?",
+              "code": null,
+              "options": [
+                "A interação entre objetos em uma ordem sequencial (ao longo do tempo).",
+                "A estrutura estática das classes do sistema.",
+                "As instâncias de classes em um único ponto do tempo.",
+                "Os requisitos funcionais sob a visão do ator.",
+                "O fluxo de dados entre processos e depósitos."
+              ],
+              "answerIndex": 0,
+              "explanation": "O diagrama de sequência mostra a interação entre objetos na ordem em que as mensagens ocorrem ao longo do tempo."
+            },
+            {
+              "id": "ms005_q3",
+              "difficulty": 2,
+              "prompt": "No diagrama de sequência, os objetos participantes (instâncias) são representados por:",
+              "code": null,
+              "options": ["Linhas de vida (lifelines)", "Atores", "Casos de uso", "Nós de decisão", "Pacotes"],
+              "answerIndex": 0,
+              "explanation": "Cada instância participante é representada por uma linha de vida, no formato \"nomeInstância : NomeClasse\"."
+            },
+            {
+              "id": "ms005_q4",
+              "difficulty": 1,
+              "prompt": "No diagrama de sequência, a comunicação entre os objetos é representada por:",
+              "code": null,
+              "options": ["Mensagens (setas)", "Linhas de vida", "Atores", "Atributos", "Estados"],
+              "answerIndex": 0,
+              "explanation": "A comunicação entre objetos é representada por mensagens, desenhadas como setas em ordem sequencial."
+            }
+          ]
+        },
+        {
+          "id": "ms006",
+          "title": "Padrões & Métricas",
+          "subtitle": "Design patterns e métricas de teste",
+          "icon": "extension",
+          "color": "0xFF2B70C9",
+          "teaching": [
+            {
+              "title": "Padrões de projeto",
+              "body": "Um padrão de projeto (design pattern) é uma solução geral e reutilizável para um problema comum no projeto de software. Não é código pronto, e sim um modelo de como resolver o problema. Eles aceleram o desenvolvimento e melhoram a legibilidade.",
+              "code": null,
+              "linksTo": "Questão sobre o que são padrões de projeto."
+            },
+            {
+              "title": "Os três tipos",
+              "body": "• Criação — sobre instanciação de classes/objetos (ex.: Singleton, Factory, Builder, Prototype);\n• Estrutural — como compor objetos para novas funcionalidades (ex.: Adapter);\n• Comportamental — comunicação entre objetos (ex.: Observer).",
+              "code": null,
+              "linksTo": "Questões sobre os tipos de padrões e o Singleton."
+            },
+            {
+              "title": "Métricas de teste",
+              "body": "São medidas quantitativas que permitem estimar progresso, qualidade, produtividade e integridade do processo de teste de software, apoiando decisões e a melhoria contínua do desenvolvimento.",
+              "code": null,
+              "linksTo": "Questão sobre o objetivo das métricas de teste."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ms006_q1",
+              "difficulty": 1,
+              "prompt": "Na engenharia de software, um padrão de projeto (design pattern) é:",
+              "code": null,
+              "options": [
+                "Uma solução geral e reutilizável para um problema comum de projeto — um modelo, não um código pronto.",
+                "Um trecho de código final que pode ser copiado diretamente para o sistema.",
+                "Uma métrica que mede a qualidade do software.",
+                "Um diagrama da UML para representar atores.",
+                "Uma linguagem de programação orientada a objetos."
+              ],
+              "answerIndex": 0,
+              "explanation": "Design pattern é uma solução geral reutilizável (um modelo) para problemas recorrentes — não um código acabado."
+            },
+            {
+              "id": "ms006_q2",
+              "difficulty": 2,
+              "prompt": "Os padrões de projeto podem ser divididos em três tipos. Quais são?",
+              "code": null,
+              "options": [
+                "Criação, Estrutural e Comportamental.",
+                "Criação, Destruição e Manutenção.",
+                "Estrutural, Sequencial e Paralelo.",
+                "Funcional, Não funcional e de Negócio.",
+                "Singleton, Factory e Observer."
+              ],
+              "answerIndex": 0,
+              "explanation": "Os três tipos são: padrões de Criação, Estruturais e Comportamentais."
+            },
+            {
+              "id": "ms006_q3",
+              "difficulty": 2,
+              "prompt": "O padrão Singleton, que garante que apenas uma única instância de uma classe possa existir, pertence à categoria de padrões de:",
+              "code": null,
+              "options": ["Criação", "Estrutura", "Comportamento", "Implantação", "Interação"],
+              "answerIndex": 0,
+              "explanation": "O Singleton trata da instanciação de objetos, sendo um padrão de criação."
+            },
+            {
+              "id": "ms006_q4",
+              "difficulty": 2,
+              "prompt": "As métricas de teste de software servem principalmente para:",
+              "code": null,
+              "options": [
+                "Estimar de forma quantitativa o progresso, a qualidade, a produtividade e a integridade do processo de teste.",
+                "Substituir os testes manuais por diagramas da UML.",
+                "Definir os atores de um diagrama de caso de uso.",
+                "Compilar o código-fonte mais rápido.",
+                "Garantir que nenhum padrão de projeto seja utilizado."
+              ],
+              "answerIndex": 0,
+              "explanation": "Métricas de teste são medidas quantitativas que estimam progresso, qualidade, produtividade e integridade do processo de teste."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
