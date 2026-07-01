@@ -8,6 +8,7 @@
       "subtitle": "Desenvolvimento de aplicativos Android",
       "icon": "smartphone",
       "color": "0xFF58CC02",
+      "track": "Faculdade",
       "modules": [
         {
           "id": "t001",
@@ -56,7 +57,13 @@
               "difficulty": 1,
               "prompt": "O desenvolvimento móvel incorpora aspectos distintos dos dispositivos. Avalie:\nI - Tanto o desenvolvimento móvel quanto o web precisam considerar as limitações de energia dos dispositivos.\nII - O desenvolvimento móvel exige atenção às limitações de recursos (processamento e memória).\nIII - O contexto de uso (localização, conectividade, interações) afeta a experiência do app.\nQuais afirmações estão corretas?",
               "code": null,
-              "options": ["II e III", "I e II", "Apenas I", "Apenas III", "Apenas II"],
+              "options": [
+                "II e III",
+                "I e II",
+                "Apenas I",
+                "Apenas III",
+                "Apenas II"
+              ],
               "answerIndex": 0,
               "explanation": "A limitação de energia é uma preocupação típica do MÓVEL (não do web), por isso a I está incorreta. II e III descrevem corretamente as características do desenvolvimento mobile."
             },
@@ -109,7 +116,13 @@
               "difficulty": 1,
               "prompt": "Sobre as funcionalidades do Android Studio:\nI - Inclui um emulador para testar apps em diferentes dispositivos e versões sem hardware físico.\nII - Suporte integrado a controle de versão como Git.\nIII - Permite desenvolver aplicativos somente em Kotlin e Javascript.\nQuais estão corretas?",
               "code": null,
-              "options": ["Apenas I e III", "Apenas II", "Apenas III", "Apenas I", "Apenas I e II"],
+              "options": [
+                "Apenas I e III",
+                "Apenas II",
+                "Apenas III",
+                "Apenas I",
+                "Apenas I e II"
+              ],
               "answerIndex": 4,
               "explanation": "O Android Studio suporta Java e Kotlin (não \"somente Kotlin e Javascript\"), então a III está errada. I e II são corretas."
             },
@@ -118,7 +131,13 @@
               "difficulty": 1,
               "prompt": "Entre as opções de teste de aplicativos no Android Studio, considere:\nI - Uso do Android Virtual Device (AVD) Manager para criar e gerenciar emuladores.\nII - Conexão de um dispositivo Android físico com o modo desenvolvedor habilitado.\nIII - Emprego de emuladores Android de terceiros.\nQuais são válidas?",
               "code": null,
-              "options": ["Apenas II", "Apenas I", "Apenas I e II", "Apenas III", "Apenas I, II e III"],
+              "options": [
+                "Apenas II",
+                "Apenas I",
+                "Apenas I e II",
+                "Apenas III",
+                "Apenas I, II e III"
+              ],
               "answerIndex": 4,
               "explanation": "Todas as três opções são formas válidas de testar apps Android: emulador do AVD, dispositivo físico e emuladores de terceiros."
             },
@@ -127,7 +146,13 @@
               "difficulty": 2,
               "prompt": "Sobre a linguagem Kotlin:\nI - Foi projetada para ser totalmente interoperável com Java, permitindo usar bibliotecas Java e migrar código com facilidade.\nII - Incorpora no sistema de tipos a segurança nula (anotadores @Nullable e @NonNull), prevenindo erros de nulidade em tempo de compilação.\nIII - É uma linguagem exclusivamente funcional e não suporta outros paradigmas.\nQuais afirmações são corretas?",
               "code": null,
-              "options": ["Apenas I", "I e II", "Apenas III", "I, II e III", "Apenas II"],
+              "options": [
+                "Apenas I",
+                "I e II",
+                "Apenas III",
+                "I, II e III",
+                "Apenas II"
+              ],
               "answerIndex": 1,
               "explanation": "Kotlin é interoperável com Java (I) e possui segurança nula no sistema de tipos (II). Ela é multiparadigma (orientada a objetos e funcional), então a III está errada."
             }
@@ -186,7 +211,13 @@
               "difficulty": 2,
               "prompt": "Sobre práticas de acessibilidade no Android:\nI - Atribuir \"@null\" ao android:contentDescription em imagens puramente decorativas.\nII - Utilizar android:accessibilityHeading para destacar cabeçalhos de texto.\nIII - Garantir área tocável mínima de 48dp x 48dp para cada elemento interativo.\nQuais estão corretas?",
               "code": null,
-              "options": ["Apenas III", "Apenas II", "I, II e III", "I e II", "Apenas I"],
+              "options": [
+                "Apenas III",
+                "Apenas II",
+                "I, II e III",
+                "I e II",
+                "Apenas I"
+              ],
               "answerIndex": 2,
               "explanation": "As três são recomendações oficiais de acessibilidade do Android."
             },
@@ -195,7 +226,13 @@
               "difficulty": 2,
               "prompt": "Sobre os componentes de interface no Android:\nI - Uma View é um componente de interface que pode exibir itens ou com o qual o usuário interage diretamente.\nII - ViewGroup é um contêiner invisível responsável pela organização e layout das Views.\nIII - ConstraintLayout é considerado um exemplo de View.\nQuais estão corretas?",
               "code": null,
-              "options": ["I e II", "I e III", "Apenas III", "Apenas II", "Apenas I"],
+              "options": [
+                "I e II",
+                "I e III",
+                "Apenas III",
+                "Apenas II",
+                "Apenas I"
+              ],
               "answerIndex": 0,
               "explanation": "View e ViewGroup estão descritos corretamente (I e II). ConstraintLayout é um ViewGroup (contêiner), não uma View, então a III está errada."
             }
@@ -233,7 +270,13 @@
               "difficulty": 1,
               "prompt": "Qual callback do ciclo de vida é invocado para criar uma atividade?",
               "code": null,
-              "options": ["onPause", "onResume", "onCreate", "onDestroy", "onStart"],
+              "options": [
+                "onPause",
+                "onResume",
+                "onCreate",
+                "onDestroy",
+                "onStart"
+              ],
               "answerIndex": 2,
               "explanation": "onCreate() é chamado quando a Activity é criada; nele é feita a inicialização e o setContentView()."
             },
@@ -242,7 +285,13 @@
               "difficulty": 1,
               "prompt": "Qual é o callback responsável por tornar uma atividade visível ao usuário?",
               "code": null,
-              "options": ["onStop", "onCreate", "onResume", "onStart", "onPause"],
+              "options": [
+                "onStop",
+                "onCreate",
+                "onResume",
+                "onStart",
+                "onPause"
+              ],
               "answerIndex": 3,
               "explanation": "onStart() é chamado quando a Activity se torna visível ao usuário (mas ainda não interativa em primeiro plano)."
             },
@@ -251,7 +300,13 @@
               "difficulty": 1,
               "prompt": "Qual é o callback chamado quando a Activity deixa de estar visível para o usuário?",
               "code": null,
-              "options": ["onStop", "onResume", "onPause", "onCreate", "onStart"],
+              "options": [
+                "onStop",
+                "onResume",
+                "onPause",
+                "onCreate",
+                "onStart"
+              ],
               "answerIndex": 0,
               "explanation": "onStop() é invocado quando a Activity deixa de estar visível (totalmente coberta ou em segundo plano)."
             },
@@ -260,7 +315,13 @@
               "difficulty": 1,
               "prompt": "Qual callback é responsável por trazer a aplicação para o primeiro plano, tornando-a disponível para interação do usuário?",
               "code": null,
-              "options": ["onCreate", "onPause", "onResume", "onStart", "onStop"],
+              "options": [
+                "onCreate",
+                "onPause",
+                "onResume",
+                "onStart",
+                "onStop"
+              ],
               "answerIndex": 2,
               "explanation": "onResume() coloca a Activity em primeiro plano e a torna interativa para o usuário."
             },
@@ -269,7 +330,12 @@
               "difficulty": 2,
               "prompt": "Sobre as características de uma Activity no Android:\nI - Uma aplicação Android deve possuir mais de uma Activity.\nII - Uma Activity deve funcionar como um módulo único e independente.\nIII - Uma Activity é uma extensão da classe Activity no Android.\nQuais estão corretas?",
               "code": null,
-              "options": ["Apenas II", "Apenas I", "II e III", "I e II"],
+              "options": [
+                "Apenas II",
+                "Apenas I",
+                "II e III",
+                "I e II"
+              ],
               "answerIndex": 2,
               "explanation": "Um app pode ter UMA ou mais Activities (a I força \"deve possuir mais de uma\", o que é falso). II e III estão corretas: a Activity é um módulo independente e estende a classe Activity (ou AppCompatActivity)."
             },
@@ -328,7 +394,13 @@
               "difficulty": 1,
               "prompt": "No uso básico de SQLite no Android com Kotlin, qual é o principal componente que permite a criação, abertura e gerenciamento do banco de dados?",
               "code": null,
-              "options": ["SQLiteOpenHelper", "Room Database", "File System", "SharedPreferences", "ContentProvider"],
+              "options": [
+                "SQLiteOpenHelper",
+                "Room Database",
+                "File System",
+                "SharedPreferences",
+                "ContentProvider"
+              ],
               "answerIndex": 0,
               "explanation": "SQLiteOpenHelper é a classe auxiliar para criar, abrir, gerenciar versões e atualizar o banco SQLite."
             },
@@ -337,7 +409,13 @@
               "difficulty": 2,
               "prompt": "Para armazenar pequenas quantidades de dados não estruturados (configurações, flags, estados de interface) como pares chave-valor primitivos, qual é o principal mecanismo de persistência do Android?",
               "code": null,
-              "options": ["Room Database", "ContentProvider", "File System", "SQLiteOpenHelper", "SharedPreferences"],
+              "options": [
+                "Room Database",
+                "ContentProvider",
+                "File System",
+                "SQLiteOpenHelper",
+                "SharedPreferences"
+              ],
               "answerIndex": 4,
               "explanation": "SharedPreferences é o mecanismo leve para persistir coleções de pares chave-valor de tipos primitivos."
             },
@@ -420,7 +498,13 @@
               "difficulty": 1,
               "prompt": "Qual é o formato padrão de mercado para a troca de informações entre o dispositivo e um web service, por ser mais leve e rápido que o XML?",
               "code": null,
-              "options": ["JSON", "CSV", "YAML", "XML", "HTML"],
+              "options": [
+                "JSON",
+                "CSV",
+                "YAML",
+                "XML",
+                "HTML"
+              ],
               "answerIndex": 0,
               "explanation": "O JSON (notação de objeto JavaScript) tornou-se o padrão por ser menos verboso e mais rápido de interpretar que o XML."
             },
@@ -444,7 +528,13 @@
               "difficulty": 2,
               "prompt": "Na AsyncTask, qual método executa o processamento pesado (como a requisição de rede) em segundo plano?",
               "code": null,
-              "options": ["doInBackground", "onPreExecute", "onPostExecute", "onProgressUpdate", "onCreate"],
+              "options": [
+                "doInBackground",
+                "onPreExecute",
+                "onPostExecute",
+                "onProgressUpdate",
+                "onCreate"
+              ],
               "answerIndex": 0,
               "explanation": "doInBackground() roda em uma thread de segundo plano, ideal para tarefas demoradas como requisições de rede."
             },
@@ -453,7 +543,13 @@
               "difficulty": 2,
               "prompt": "Após a AsyncTask terminar o processamento, qual método publica o resultado de volta na Thread da interface do usuário (UI)?",
               "code": null,
-              "options": ["onPostExecute", "doInBackground", "onPreExecute", "onProgressUpdate", "onDestroy"],
+              "options": [
+                "onPostExecute",
+                "doInBackground",
+                "onPreExecute",
+                "onProgressUpdate",
+                "onDestroy"
+              ],
               "answerIndex": 0,
               "explanation": "onPostExecute() é executado na UI Thread após o doInBackground, permitindo atualizar a interface com o resultado."
             }
@@ -467,6 +563,7 @@
       "subtitle": "Modelagem, UML e padrões de projeto",
       "icon": "design_services",
       "color": "0xFF1CB0F6",
+      "track": "Faculdade",
       "modules": [
         {
           "id": "ms001",
@@ -530,7 +627,13 @@
               "difficulty": 2,
               "prompt": "Sobre os princípios da modelagem:\nI - A escolha de quais modelos criar influencia profundamente como o problema é atacado.\nII - Todo modelo deve sempre ser expresso no nível máximo de precisão.\nIII - Nenhum modelo único é suficiente; os melhores sistemas usam um conjunto de modelos.\nQuais estão corretas?",
               "code": null,
-              "options": ["I e III", "I e II", "Apenas II", "II e III", "Apenas I"],
+              "options": [
+                "I e III",
+                "I e II",
+                "Apenas II",
+                "II e III",
+                "Apenas I"
+              ],
               "answerIndex": 0,
               "explanation": "I e III são corretas. A II é falsa: o nível de precisão varia conforme a necessidade — às vezes um modelo simples basta, às vezes é preciso detalhar."
             }
@@ -604,7 +707,13 @@
               "difficulty": 2,
               "prompt": "Qual pilar da orientação a objetos é definido como \"o mecanismo pelo qual os detalhes de implementação são ocultados do usuário\"?",
               "code": null,
-              "options": ["Abstração", "Encapsulamento", "Herança", "Polimorfismo", "Associação"],
+              "options": [
+                "Abstração",
+                "Encapsulamento",
+                "Herança",
+                "Polimorfismo",
+                "Associação"
+              ],
               "answerIndex": 0,
               "explanation": "Abstração é ocultar os detalhes de implementação. (Encapsulamento é ligar e proteger os dados; não confundir.)"
             },
@@ -687,7 +796,13 @@
               "difficulty": 2,
               "prompt": "Sobre associação e dependência na UML:\nI - Toda associação implica uma dependência.\nII - Representamos apenas as dependências essenciais para a compreensão do sistema.\nIII - Associação e dependência nunca têm qualquer relação entre si.\nQuais estão corretas?",
               "code": null,
-              "options": ["I e II", "I e III", "Apenas III", "II e III", "Apenas I"],
+              "options": [
+                "I e II",
+                "I e III",
+                "Apenas III",
+                "II e III",
+                "Apenas I"
+              ],
               "answerIndex": 0,
               "explanation": "I e II são corretas. A III é falsa: toda associação implica uma dependência, logo elas se relacionam."
             },
@@ -696,7 +811,13 @@
               "difficulty": 1,
               "prompt": "Os diagramas de classes e de objetos são classificados como diagramas:",
               "code": null,
-              "options": ["Estruturais", "Comportamentais", "De interação", "De implantação dinâmica", "De fluxo de dados"],
+              "options": [
+                "Estruturais",
+                "Comportamentais",
+                "De interação",
+                "De implantação dinâmica",
+                "De fluxo de dados"
+              ],
               "answerIndex": 0,
               "explanation": "Ambos representam o aspecto estático do sistema, sendo diagramas estruturais."
             }
@@ -749,7 +870,13 @@
               "difficulty": 1,
               "prompt": "O diagrama de caso de uso é classificado como um diagrama:",
               "code": null,
-              "options": ["Comportamental", "Estrutural", "De classes", "De implantação", "De objetos"],
+              "options": [
+                "Comportamental",
+                "Estrutural",
+                "De classes",
+                "De implantação",
+                "De objetos"
+              ],
               "answerIndex": 0,
               "explanation": "O caso de uso enfatiza o comportamento dinâmico do sistema, sendo um diagrama comportamental."
             },
@@ -758,7 +885,13 @@
               "difficulty": 2,
               "prompt": "Qual relacionamento representa uma funcionalidade OPCIONAL que expande um caso de uso base, sendo que o caso base decide se ela será executada?",
               "code": null,
-              "options": ["extend (estender)", "include (incluir)", "generalização", "associação", "realização"],
+              "options": [
+                "extend (estender)",
+                "include (incluir)",
+                "generalização",
+                "associação",
+                "realização"
+              ],
               "answerIndex": 0,
               "explanation": "O relacionamento extend conecta um caso opcional a um caso base; o base decide se o estendido executa, e ambos podem rodar separadamente."
             },
@@ -767,7 +900,13 @@
               "difficulty": 2,
               "prompt": "Qual relacionamento representa um comportamento OBRIGATÓRIO e reutilizável, sempre incorporado por um caso de uso base?",
               "code": null,
-              "options": ["include (incluir)", "extend (estender)", "dependência", "associação", "generalização"],
+              "options": [
+                "include (incluir)",
+                "extend (estender)",
+                "dependência",
+                "associação",
+                "generalização"
+              ],
               "answerIndex": 0,
               "explanation": "O include representa um comportamento obrigatório e reutilizado, que é sempre incluído pelo caso de uso base."
             }
@@ -835,7 +974,13 @@
               "difficulty": 2,
               "prompt": "No diagrama de sequência, os objetos participantes (instâncias) são representados por:",
               "code": null,
-              "options": ["Linhas de vida (lifelines)", "Atores", "Casos de uso", "Nós de decisão", "Pacotes"],
+              "options": [
+                "Linhas de vida (lifelines)",
+                "Atores",
+                "Casos de uso",
+                "Nós de decisão",
+                "Pacotes"
+              ],
               "answerIndex": 0,
               "explanation": "Cada instância participante é representada por uma linha de vida, no formato \"nomeInstância : NomeClasse\"."
             },
@@ -844,7 +989,13 @@
               "difficulty": 1,
               "prompt": "No diagrama de sequência, a comunicação entre os objetos é representada por:",
               "code": null,
-              "options": ["Mensagens (setas)", "Linhas de vida", "Atores", "Atributos", "Estados"],
+              "options": [
+                "Mensagens (setas)",
+                "Linhas de vida",
+                "Atores",
+                "Atributos",
+                "Estados"
+              ],
               "answerIndex": 0,
               "explanation": "A comunicação entre objetos é representada por mensagens, desenhadas como setas em ordem sequencial."
             }
@@ -912,7 +1063,13 @@
               "difficulty": 2,
               "prompt": "O padrão Singleton, que garante que apenas uma única instância de uma classe possa existir, pertence à categoria de padrões de:",
               "code": null,
-              "options": ["Criação", "Estrutura", "Comportamento", "Implantação", "Interação"],
+              "options": [
+                "Criação",
+                "Estrutura",
+                "Comportamento",
+                "Implantação",
+                "Interação"
+              ],
               "answerIndex": 0,
               "explanation": "O Singleton trata da instanciação de objetos, sendo um padrão de criação."
             },
@@ -930,6 +1087,2329 @@
               ],
               "answerIndex": 0,
               "explanation": "Métricas de teste são medidas quantitativas que estimam progresso, qualidade, produtividade e integridade do processo de teste."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "con_especificos",
+      "name": "Conhecimentos Específicos (TI)",
+      "subtitle": "O bloco do cargo — corte mínimo de 5/10",
+      "icon": "memory",
+      "color": "0xFF1CB0F6",
+      "track": "Concurso — Analista de Sistemas (FUNDATEC · Novo Hamburgo)",
+      "modules": [
+        {
+          "id": "ce001",
+          "title": "Engenharia de Software & UML",
+          "subtitle": "Requisitos, ciclo de vida, testes e diagramas UML",
+          "icon": "schema",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "Requisitos: funcionais x não funcionais",
+              "body": "Requisito FUNCIONAL descreve O QUE o sistema faz (uma função: \"emitir boleto\", \"cadastrar usuário\"). Requisito NÃO FUNCIONAL descreve COMO/com que qualidade (desempenho, segurança, usabilidade, disponibilidade), ex.: \"responder em menos de 2s\".",
+              "code": null,
+              "linksTo": "Questão sobre classificação de requisitos."
+            },
+            {
+              "title": "Ciclo de vida do software",
+              "body": "Cascata: fases sequenciais (requisitos → projeto → implementação → testes → manutenção). Iterativo/Incremental: entrega em ciclos curtos, com refinamento e feedback a cada incremento. Espiral: guiado por análise de riscos.",
+              "code": null,
+              "linksTo": "Questão sobre modelos de processo."
+            },
+            {
+              "title": "UML e testes",
+              "body": "Diagramas comportamentais mostram o comportamento (Casos de Uso, Sequência, Atividade); estruturais mostram a estrutura (Classes, Componentes). Teste caixa-preta olha a especificação/funcionalidade (sem ver o código); caixa-branca olha a estrutura interna. Análise de Pontos de Função mede o TAMANHO FUNCIONAL, independente da tecnologia.",
+              "code": null,
+              "linksTo": "Questões sobre UML, testes e métricas."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ce001_q1",
+              "difficulty": 1,
+              "prompt": "Qual das alternativas representa um requisito NÃO funcional?",
+              "code": null,
+              "options": [
+                "O sistema deve permitir cadastrar clientes.",
+                "O sistema deve emitir nota fiscal.",
+                "O sistema deve responder a qualquer consulta em menos de 2 segundos.",
+                "O sistema deve calcular o total do pedido.",
+                "O sistema deve registrar login do usuário."
+              ],
+              "answerIndex": 2,
+              "explanation": "Tempo de resposta é um atributo de qualidade (desempenho) — requisito não funcional. As demais descrevem funções do sistema."
+            },
+            {
+              "id": "ce001_q2",
+              "difficulty": 1,
+              "prompt": "Qual diagrama da UML modela as interações entre atores e o sistema, representando o que o sistema deve fazer sob a ótica do usuário?",
+              "code": null,
+              "options": [
+                "Diagrama de Classes",
+                "Diagrama de Casos de Uso",
+                "Diagrama de Componentes",
+                "Diagrama de Implantação",
+                "Diagrama de Objetos"
+              ],
+              "answerIndex": 1,
+              "explanation": "O Diagrama de Casos de Uso descreve funcionalidades a partir da interação ator–sistema."
+            },
+            {
+              "id": "ce001_q3",
+              "difficulty": 2,
+              "prompt": "O teste de caixa-preta (funcional) caracteriza-se por:",
+              "code": null,
+              "options": [
+                "Analisar o código-fonte linha a linha.",
+                "Avaliar caminhos internos e cobertura de código.",
+                "Verificar o comportamento pelas entradas e saídas, sem conhecer a implementação.",
+                "Medir o consumo de memória do programa.",
+                "Ser aplicado somente por quem escreveu o código."
+              ],
+              "answerIndex": 2,
+              "explanation": "Caixa-preta valida a funcionalidade pela especificação (entradas/saídas), sem considerar a estrutura interna do código."
+            },
+            {
+              "id": "ce001_q4",
+              "difficulty": 2,
+              "prompt": "O modelo de ciclo de vida que entrega o software em partes, com refinamento e feedback a cada iteração, é o:",
+              "code": null,
+              "options": [
+                "Cascata (waterfall)",
+                "Incremental/iterativo",
+                "Big-bang",
+                "Modelo em V puro",
+                "Codifica-e-corrige"
+              ],
+              "answerIndex": 1,
+              "explanation": "No modelo incremental/iterativo o produto é construído e refinado em ciclos, permitindo feedback contínuo."
+            },
+            {
+              "id": "ce001_q5",
+              "difficulty": 3,
+              "prompt": "A Análise de Pontos de Função (APF) tem como objetivo:",
+              "code": null,
+              "options": [
+                "Contar as linhas de código escritas.",
+                "Medir o tamanho funcional do software sob a ótica do usuário, independente da tecnologia.",
+                "Estimar o número de bugs por módulo.",
+                "Definir a arquitetura de hardware.",
+                "Medir a velocidade do processador."
+              ],
+              "answerIndex": 1,
+              "explanation": "A APF mede o tamanho funcional (funcionalidades entregues ao usuário), sem depender da linguagem ou plataforma."
+            }
+          ]
+        },
+        {
+          "id": "ce002",
+          "title": "Métodos Ágeis",
+          "subtitle": "Scrum, XP e Kanban",
+          "icon": "loop",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "Manifesto Ágil",
+              "body": "Valoriza: indivíduos e interações mais que processos; software funcionando mais que documentação extensa; colaboração com o cliente mais que negociação de contrato; responder a mudanças mais que seguir um plano.",
+              "code": null,
+              "linksTo": "Base conceitual dos métodos ágeis."
+            },
+            {
+              "title": "Scrum: papéis, eventos e artefatos",
+              "body": "Papéis: Product Owner (prioriza o Product Backlog e o valor), Scrum Master (facilita o processo e remove impedimentos — servant leader) e Developers (constroem o incremento). Eventos: Sprint, Planning, Daily, Review e Retrospective. Artefatos: Product Backlog, Sprint Backlog e Increment.",
+              "code": null,
+              "linksTo": "Questões sobre papéis e eventos do Scrum."
+            },
+            {
+              "title": "XP e Kanban",
+              "body": "XP (Extreme Programming) traz práticas como TDD (teste antes do código), programação em par, integração contínua e refatoração. Kanban usa um quadro (board) com fluxo contínuo e LIMITA o WIP (trabalho em progresso) para revelar gargalos e melhorar o fluxo.",
+              "code": null,
+              "linksTo": "Questões sobre XP e Kanban."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ce002_q1",
+              "difficulty": 1,
+              "prompt": "No Scrum, quem é o responsável por priorizar o Product Backlog e maximizar o valor do produto?",
+              "code": null,
+              "options": [
+                "Scrum Master",
+                "Product Owner",
+                "Developers",
+                "Stakeholder",
+                "Gerente de Projeto"
+              ],
+              "answerIndex": 1,
+              "explanation": "O Product Owner é o dono do produto: prioriza o Product Backlog e representa o valor de negócio."
+            },
+            {
+              "id": "ce002_q2",
+              "difficulty": 1,
+              "prompt": "O evento diário, com duração máxima de 15 minutos, em que os desenvolvedores sincronizam o trabalho e planejam o dia é a:",
+              "code": null,
+              "options": [
+                "Sprint Review",
+                "Sprint Planning",
+                "Daily Scrum",
+                "Retrospective",
+                "Sprint Backlog"
+              ],
+              "answerIndex": 2,
+              "explanation": "A Daily Scrum é a reunião diária (time-box de 15 min) de sincronização do time de desenvolvimento."
+            },
+            {
+              "id": "ce002_q3",
+              "difficulty": 2,
+              "prompt": "Sobre o papel do Scrum Master, é CORRETO afirmar que ele:",
+              "code": null,
+              "options": [
+                "Prioriza o backlog e decide o que será entregue.",
+                "Comanda o time e distribui as tarefas.",
+                "Atua como facilitador, removendo impedimentos e protegendo o processo (servant leader).",
+                "Substitui o Product Owner nas decisões de negócio.",
+                "Escreve todo o código da Sprint."
+              ],
+              "answerIndex": 2,
+              "explanation": "O Scrum Master é um líder servidor: facilita o Scrum, remove impedimentos e ajuda o time — não prioriza backlog nem manda no time."
+            },
+            {
+              "id": "ce002_q4",
+              "difficulty": 2,
+              "prompt": "A prática do XP na qual o teste automatizado é escrito ANTES do código de produção é conhecida como:",
+              "code": null,
+              "options": [
+                "Pair Programming",
+                "TDD (Test-Driven Development)",
+                "Code Review",
+                "Integração Contínua",
+                "Refatoração"
+              ],
+              "answerIndex": 1,
+              "explanation": "TDD (Desenvolvimento Orientado a Testes): escreve-se o teste que falha, depois o código para passar, e então refatora-se."
+            },
+            {
+              "id": "ce002_q5",
+              "difficulty": 3,
+              "prompt": "No Kanban, limitar o WIP (Work In Progress) serve principalmente para:",
+              "code": null,
+              "options": [
+                "Aumentar o número de tarefas iniciadas ao mesmo tempo.",
+                "Eliminar a necessidade de um quadro visual.",
+                "Reduzir o trabalho simultâneo, expondo gargalos e melhorando o fluxo de entrega.",
+                "Substituir as Sprints por prazos fixos.",
+                "Impedir mudanças de prioridade."
+              ],
+              "answerIndex": 2,
+              "explanation": "Limitar o WIP evita excesso de itens em andamento, revela gargalos e melhora o tempo de fluxo (lead time)."
+            }
+          ]
+        },
+        {
+          "id": "ce003",
+          "title": "Banco de Dados & SQL",
+          "subtitle": "Modelo relacional, DER, normalização e SQL",
+          "icon": "storage",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "Modelo relacional e DER",
+              "body": "No modelo relacional os dados ficam em tabelas (relações). Chave primária (PK) identifica unicamente cada linha; chave estrangeira (FK) referencia a PK de outra tabela, garantindo INTEGRIDADE REFERENCIAL. O DER modela entidades, atributos e cardinalidades.",
+              "code": null,
+              "linksTo": "Questões sobre chaves e integridade."
+            },
+            {
+              "title": "Sublinguagens SQL",
+              "body": "DDL define estrutura (CREATE, ALTER, DROP). DML manipula dados (SELECT, INSERT, UPDATE, DELETE). DCL controla acesso (GRANT, REVOKE). TCL controla transações (COMMIT confirma, ROLLBACK desfaz).",
+              "code": null,
+              "linksTo": "Questões sobre comandos SQL e transações."
+            },
+            {
+              "title": "Normalização e JOINs",
+              "body": "1FN: valores atômicos. 2FN: 1FN + dependência total da chave. 3FN: 2FN + sem dependência transitiva (atributo não-chave não depende de outro não-chave). INNER JOIN retorna só as linhas com correspondência nas duas tabelas.",
+              "code": null,
+              "linksTo": "Questões sobre normalização e junções."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ce003_q1",
+              "difficulty": 1,
+              "prompt": "Qual comando SQL remove permanentemente uma tabela, incluindo sua estrutura?",
+              "code": null,
+              "options": [
+                "DELETE FROM tabela",
+                "TRUNCATE tabela",
+                "DROP TABLE tabela",
+                "REMOVE tabela",
+                "CLEAR TABLE tabela"
+              ],
+              "answerIndex": 2,
+              "explanation": "DROP TABLE apaga a tabela e sua estrutura. DELETE e TRUNCATE removem apenas linhas, mantendo a tabela."
+            },
+            {
+              "id": "ce003_q2",
+              "difficulty": 1,
+              "prompt": "Em uma transação, o comando que DESFAZ todas as alterações não confirmadas é o:",
+              "code": null,
+              "options": [
+                "COMMIT",
+                "ROLLBACK",
+                "SAVE",
+                "GRANT",
+                "UPDATE"
+              ],
+              "answerIndex": 1,
+              "explanation": "ROLLBACK desfaz as alterações da transação; COMMIT confirma-as definitivamente."
+            },
+            {
+              "id": "ce003_q3",
+              "difficulty": 2,
+              "prompt": "A chave estrangeira (foreign key) tem como função principal:",
+              "code": null,
+              "options": [
+                "Identificar unicamente cada linha da própria tabela.",
+                "Ordenar fisicamente os registros no disco.",
+                "Garantir a integridade referencial, relacionando uma tabela a outra.",
+                "Criptografar os dados sensíveis.",
+                "Acelerar o backup do banco."
+              ],
+              "answerIndex": 2,
+              "explanation": "A FK referencia a PK de outra tabela e garante que só existam relacionamentos válidos (integridade referencial)."
+            },
+            {
+              "id": "ce003_q4",
+              "difficulty": 2,
+              "prompt": "Qual tipo de junção retorna APENAS as linhas que possuem correspondência em ambas as tabelas?",
+              "code": null,
+              "options": [
+                "LEFT JOIN",
+                "RIGHT JOIN",
+                "FULL OUTER JOIN",
+                "INNER JOIN",
+                "CROSS JOIN"
+              ],
+              "answerIndex": 3,
+              "explanation": "O INNER JOIN retorna somente as combinações com correspondência nas duas tabelas."
+            },
+            {
+              "id": "ce003_q5",
+              "difficulty": 3,
+              "prompt": "Uma tabela está na Terceira Forma Normal (3FN) quando, além de atender à 2FN:",
+              "code": null,
+              "options": [
+                "Possui pelo menos uma chave estrangeira.",
+                "Não possui atributos multivalorados.",
+                "Não há dependência transitiva (nenhum atributo não-chave depende de outro atributo não-chave).",
+                "Todas as colunas são do tipo texto.",
+                "Não utiliza índices."
+              ],
+              "answerIndex": 2,
+              "explanation": "A 3FN elimina dependências transitivas: atributos não-chave devem depender apenas da chave primária."
+            }
+          ]
+        },
+        {
+          "id": "ce004",
+          "title": "Programação & POO",
+          "subtitle": "Orientação a objetos, Java/PHP e APIs REST",
+          "icon": "code",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "Os quatro pilares da POO",
+              "body": "Abstração (modelar o essencial), Encapsulamento (esconder detalhes internos e expor uma interface), Herança (uma subclasse reaproveita/estende a superclasse) e Polimorfismo (um mesmo método assume comportamentos diferentes conforme o objeto).",
+              "code": null,
+              "linksTo": "Questões sobre pilares da orientação a objetos."
+            },
+            {
+              "title": "APIs REST e HTTP",
+              "body": "REST usa os métodos HTTP: GET (buscar, sem efeitos colaterais), POST (criar), PUT (atualizar/substituir), DELETE (remover). Códigos de status: 200 OK, 201 Created, 404 Not Found, 500 erro do servidor.",
+              "code": null,
+              "linksTo": "Questões sobre métodos e status HTTP."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ce004_q1",
+              "difficulty": 1,
+              "prompt": "Qual pilar da POO consiste em esconder os detalhes internos de implementação, expondo apenas uma interface pública?",
+              "code": null,
+              "options": [
+                "Herança",
+                "Polimorfismo",
+                "Encapsulamento",
+                "Abstração",
+                "Sobrecarga"
+              ],
+              "answerIndex": 2,
+              "explanation": "Encapsulamento protege o estado interno do objeto, expondo apenas o necessário por meio de métodos."
+            },
+            {
+              "id": "ce004_q2",
+              "difficulty": 1,
+              "prompt": "Na arquitetura REST, qual método HTTP é usado para BUSCAR um recurso, sem provocar efeitos colaterais no servidor?",
+              "code": null,
+              "options": [
+                "POST",
+                "PUT",
+                "GET",
+                "DELETE",
+                "PATCH"
+              ],
+              "answerIndex": 2,
+              "explanation": "GET é usado para leitura/consulta de recursos e é considerado seguro (sem efeitos colaterais)."
+            },
+            {
+              "id": "ce004_q3",
+              "difficulty": 2,
+              "prompt": "O polimorfismo, na orientação a objetos, permite que:",
+              "code": null,
+              "options": [
+                "Uma classe tenha vários construtores idênticos.",
+                "Um mesmo método se comporte de formas diferentes conforme o objeto que o invoca.",
+                "Atributos sejam sempre públicos.",
+                "Uma classe não possa ser herdada.",
+                "Objetos sejam criados sem classe."
+              ],
+              "answerIndex": 1,
+              "explanation": "Polimorfismo permite tratar objetos de diferentes classes por uma interface comum, com comportamentos específicos."
+            },
+            {
+              "id": "ce004_q4",
+              "difficulty": 2,
+              "prompt": "Uma requisição a uma API REST retornou o código de status HTTP 404. Isso significa que:",
+              "code": null,
+              "options": [
+                "A requisição foi bem-sucedida.",
+                "O recurso solicitado não foi encontrado.",
+                "Houve erro interno no servidor.",
+                "O usuário não está autorizado.",
+                "O recurso foi criado com sucesso."
+              ],
+              "answerIndex": 1,
+              "explanation": "O status 404 (Not Found) indica que o recurso solicitado não existe no servidor."
+            },
+            {
+              "id": "ce004_q5",
+              "difficulty": 3,
+              "prompt": "Sobre herança em POO, é CORRETO afirmar que:",
+              "code": null,
+              "options": [
+                "Impede o reúso de código entre classes.",
+                "Permite que uma subclasse herde atributos e métodos de uma superclasse, podendo estendê-los ou sobrescrevê-los.",
+                "É sinônimo de encapsulamento.",
+                "Só existe em linguagens funcionais.",
+                "Elimina a necessidade de objetos."
+              ],
+              "answerIndex": 1,
+              "explanation": "A herança estabelece relação \"é um\": a subclasse reaproveita e pode especializar/sobrescrever membros da superclasse."
+            }
+          ]
+        },
+        {
+          "id": "ce005",
+          "title": "Segurança da Informação",
+          "subtitle": "Tríade CIA, criptografia, ISO 27001 e OWASP",
+          "icon": "security",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "Tríade CIA",
+              "body": "Confidencialidade: só quem tem permissão acessa a informação. Integridade: a informação não é alterada indevidamente. Disponibilidade: a informação está acessível quando necessária. Esses são os três pilares da segurança da informação.",
+              "code": null,
+              "linksTo": "Questões sobre os princípios da segurança."
+            },
+            {
+              "title": "Criptografia, assinatura e 2FA",
+              "body": "Criptografia simétrica usa uma única chave; assimétrica usa par de chaves (pública/privada). A assinatura digital usa a chave privada do emissor e garante autenticidade, integridade e NÃO-REPÚDIO. 2FA exige dois fatores (algo que você sabe + algo que você tem/é).",
+              "code": null,
+              "linksTo": "Questões sobre criptografia e autenticação."
+            },
+            {
+              "title": "Normas, ataques e LGPD",
+              "body": "ISO/IEC 27001 define o SGSI (Sistema de Gestão de Segurança da Informação); a 27002 traz controles/boas práticas. OWASP lista riscos web, como SQL Injection (mitigado por consultas parametrizadas).",
+              "code": null,
+              "linksTo": "Questões sobre normas e vulnerabilidades."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ce005_q1",
+              "difficulty": 1,
+              "prompt": "O princípio da segurança da informação que garante que os dados NÃO sejam alterados de forma indevida ou não autorizada é a:",
+              "code": null,
+              "options": [
+                "Confidencialidade",
+                "Integridade",
+                "Disponibilidade",
+                "Portabilidade",
+                "Escalabilidade"
+              ],
+              "answerIndex": 1,
+              "explanation": "Integridade assegura que a informação permaneça correta e completa, sem alterações indevidas."
+            },
+            {
+              "id": "ce005_q2",
+              "difficulty": 1,
+              "prompt": "A autenticação de dois fatores (2FA) aumenta a segurança porque:",
+              "code": null,
+              "options": [
+                "Usa uma senha mais longa.",
+                "Exige dois fatores distintos (por exemplo, senha + código no celular).",
+                "Criptografa o disco rígido.",
+                "Substitui a necessidade de senha.",
+                "Bloqueia o acesso à internet."
+              ],
+              "answerIndex": 1,
+              "explanation": "2FA combina fatores de categorias diferentes (algo que você sabe + algo que você tem/é), dificultando o acesso indevido."
+            },
+            {
+              "id": "ce005_q3",
+              "difficulty": 2,
+              "prompt": "A assinatura digital, ao ser gerada com a chave privada do emissor, garante:",
+              "code": null,
+              "options": [
+                "Apenas a confidencialidade da mensagem.",
+                "Autenticidade, integridade e não-repúdio.",
+                "Somente a disponibilidade do serviço.",
+                "A compressão do arquivo.",
+                "O anonimato do emissor."
+              ],
+              "answerIndex": 1,
+              "explanation": "A assinatura digital comprova quem enviou (autenticidade), que não houve alteração (integridade) e impede a negação da autoria (não-repúdio)."
+            },
+            {
+              "id": "ce005_q4",
+              "difficulty": 2,
+              "prompt": "Uma aplicação web que não valida as entradas do usuário e permite a inserção de comandos em consultas ao banco está sujeita a qual ataque do OWASP?",
+              "code": null,
+              "options": [
+                "Cross-Site Scripting (XSS)",
+                "SQL Injection",
+                "Phishing",
+                "Negação de serviço (DoS)",
+                "Engenharia social"
+              ],
+              "answerIndex": 1,
+              "explanation": "SQL Injection insere comandos SQL por entradas não validadas; a mitigação principal é o uso de consultas parametrizadas (prepared statements)."
+            },
+            {
+              "id": "ce005_q5",
+              "difficulty": 3,
+              "prompt": "Sobre as normas de segurança, é CORRETO afirmar que a ISO/IEC 27001:",
+              "code": null,
+              "options": [
+                "É uma linguagem de programação segura.",
+                "Define os requisitos para um Sistema de Gestão de Segurança da Informação (SGSI).",
+                "Trata apenas de criptografia de disco.",
+                "Substitui a LGPD no Brasil.",
+                "É um antivírus certificado."
+              ],
+              "answerIndex": 1,
+              "explanation": "A ISO/IEC 27001 estabelece os requisitos para implantar e manter um SGSI; a ISO/IEC 27002 complementa com controles e boas práticas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "con_legislacao",
+      "name": "Legislação",
+      "subtitle": "CF/88, estatutos e leis municipais — conforme o edital",
+      "icon": "gavel",
+      "color": "0xFF9B59B6",
+      "track": "Concurso — Analista de Sistemas (FUNDATEC · Novo Hamburgo)",
+      "modules": [
+        {
+          "id": "lg001",
+          "title": "CF/88: Princípios e Direitos Fundamentais",
+          "subtitle": "Arts. 1º ao 17 — fundamentos, objetivos e direitos",
+          "icon": "balance",
+          "color": "0xFF9B59B6",
+          "teaching": [
+            {
+              "title": "Fundamentos e objetivos da República",
+              "body": "Art. 1º — a República Federativa do Brasil tem como fundamentos: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa e pluralismo político. Parágrafo único: todo o poder emana do povo. Art. 3º — objetivos fundamentais: construir sociedade livre, justa e solidária; garantir o desenvolvimento nacional; erradicar a pobreza e reduzir desigualdades; promover o bem de todos, sem preconceitos.",
+              "code": null,
+              "linksTo": "Questões sobre os arts. 1º e 3º da CF."
+            },
+            {
+              "title": "Direitos e garantias fundamentais",
+              "body": "Art. 5º (caput): todos são iguais perante a lei, garantindo-se a inviolabilidade do direito à VIDA, LIBERDADE, IGUALDADE, SEGURANÇA e PROPRIEDADE. Art. 6º — direitos sociais: educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância e assistência aos desamparados.",
+              "code": null,
+              "linksTo": "Questões sobre os arts. 5º e 6º."
+            }
+          ],
+          "questions": [
+            {
+              "id": "lg001_q1",
+              "difficulty": 1,
+              "prompt": "São fundamentos da República Federativa do Brasil (art. 1º da CF/88), EXCETO:",
+              "code": null,
+              "options": [
+                "A soberania.",
+                "A cidadania.",
+                "A dignidade da pessoa humana.",
+                "A garantia do desenvolvimento nacional.",
+                "O pluralismo político."
+              ],
+              "answerIndex": 3,
+              "explanation": "'Garantir o desenvolvimento nacional' é OBJETIVO fundamental (art. 3º), não fundamento (art. 1º). Os fundamentos são soberania, cidadania, dignidade, valores sociais do trabalho e livre iniciativa e pluralismo político."
+            },
+            {
+              "id": "lg001_q2",
+              "difficulty": 1,
+              "prompt": "Segundo o parágrafo único do art. 1º da CF/88, todo o poder emana:",
+              "code": null,
+              "options": [
+                "Do Presidente da República.",
+                "Do Congresso Nacional.",
+                "Do povo, que o exerce por representantes eleitos ou diretamente.",
+                "Do Poder Judiciário.",
+                "Dos partidos políticos."
+              ],
+              "answerIndex": 2,
+              "explanation": "O poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente, nos termos da Constituição."
+            },
+            {
+              "id": "lg001_q3",
+              "difficulty": 2,
+              "prompt": "Constitui objetivo fundamental da República (art. 3º da CF/88):",
+              "code": null,
+              "options": [
+                "Manter relações diplomáticas com todos os países.",
+                "Erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais.",
+                "Assegurar a livre iniciativa como valor absoluto.",
+                "Centralizar o poder na União.",
+                "Garantir a soberania como fundamento."
+              ],
+              "answerIndex": 1,
+              "explanation": "Entre os objetivos do art. 3º está erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais."
+            },
+            {
+              "id": "lg001_q4",
+              "difficulty": 2,
+              "prompt": "O caput do art. 5º da CF/88 garante a inviolabilidade dos direitos à:",
+              "code": null,
+              "options": [
+                "Vida, liberdade, igualdade, segurança e propriedade.",
+                "Vida, saúde, educação e trabalho.",
+                "Liberdade, moradia, lazer e transporte.",
+                "Propriedade, herança, comércio e indústria.",
+                "Segurança, previdência e assistência social."
+              ],
+              "answerIndex": 0,
+              "explanation": "O caput do art. 5º assegura a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade."
+            },
+            {
+              "id": "lg001_q5",
+              "difficulty": 3,
+              "prompt": "Assinale a alternativa que apresenta um DIREITO SOCIAL, nos termos do art. 6º da CF/88:",
+              "code": null,
+              "options": [
+                "O voto direto e secreto.",
+                "A moradia.",
+                "A livre iniciativa.",
+                "A soberania popular.",
+                "A inviolabilidade de domicílio."
+              ],
+              "answerIndex": 1,
+              "explanation": "A moradia é direito social (art. 6º), ao lado de educação, saúde, alimentação, trabalho, transporte, lazer, segurança, previdência, proteção à maternidade/infância e assistência aos desamparados."
+            }
+          ]
+        },
+        {
+          "id": "lg002",
+          "title": "CF/88: Estado, Poderes e Administração",
+          "subtitle": "Arts. 18 ao 135 — federação, poderes e art. 37",
+          "icon": "account_tree",
+          "color": "0xFF9B59B6",
+          "teaching": [
+            {
+              "title": "Organização político-administrativa",
+              "body": "Art. 18 — a organização compreende a União, os Estados, o Distrito Federal e os Municípios, todos AUTÔNOMOS. Art. 2º — são Poderes da União, independentes e harmônicos entre si, o Legislativo, o Executivo e o Judiciário.",
+              "code": null,
+              "linksTo": "Questões sobre a federação e os poderes."
+            },
+            {
+              "title": "Administração Pública (art. 37)",
+              "body": "A administração pública direta e indireta obedece aos princípios de LEGALIDADE, IMPESSOALIDADE, MORALIDADE, PUBLICIDADE e EFICIÊNCIA (LIMPE). A investidura em cargo ou emprego público depende de aprovação prévia em CONCURSO PÚBLICO (art. 37, II), ressalvadas as nomeações para cargo em comissão. O prazo de validade do concurso é de até 2 anos, prorrogável uma vez por igual período (art. 37, III).",
+              "code": null,
+              "linksTo": "Questões sobre a administração pública."
+            }
+          ],
+          "questions": [
+            {
+              "id": "lg002_q1",
+              "difficulty": 1,
+              "prompt": "Compõem a organização político-administrativa da República Federativa do Brasil (art. 18 da CF/88):",
+              "code": null,
+              "options": [
+                "Apenas a União e os Estados.",
+                "A União, os Estados, o Distrito Federal e os Municípios.",
+                "Somente a União.",
+                "Os Estados e os Territórios.",
+                "A União e os Municípios."
+              ],
+              "answerIndex": 1,
+              "explanation": "O art. 18 estabelece a União, os Estados, o Distrito Federal e os Municípios, todos autônomos, como entes da federação."
+            },
+            {
+              "id": "lg002_q2",
+              "difficulty": 1,
+              "prompt": "Os princípios expressos que regem a administração pública no art. 37 da CF/88 são resumidos pelo mnemônico:",
+              "code": null,
+              "options": [
+                "PODER",
+                "LIMPE",
+                "LINDB",
+                "SUS",
+                "CLT"
+              ],
+              "answerIndex": 1,
+              "explanation": "LIMPE = Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência (art. 37, caput)."
+            },
+            {
+              "id": "lg002_q3",
+              "difficulty": 2,
+              "prompt": "Em regra, a investidura em cargo ou emprego público depende de:",
+              "code": null,
+              "options": [
+                "Indicação de autoridade competente.",
+                "Aprovação prévia em concurso público de provas ou de provas e títulos.",
+                "Tempo de serviço em órgão público.",
+                "Sorteio entre os inscritos.",
+                "Convite direto da administração."
+              ],
+              "answerIndex": 1,
+              "explanation": "O art. 37, II, exige aprovação prévia em concurso público, ressalvadas as nomeações para cargo em comissão declarado em lei de livre nomeação e exoneração."
+            },
+            {
+              "id": "lg002_q4",
+              "difficulty": 2,
+              "prompt": "São Poderes da União, independentes e harmônicos entre si (art. 2º da CF/88):",
+              "code": null,
+              "options": [
+                "Executivo, Judiciário e Ministério Público.",
+                "Legislativo, Executivo e Judiciário.",
+                "Legislativo, Executivo e Moderador.",
+                "Federal, Estadual e Municipal.",
+                "Constituinte, Legislativo e Executivo."
+              ],
+              "answerIndex": 1,
+              "explanation": "O art. 2º define como Poderes o Legislativo, o Executivo e o Judiciário, independentes e harmônicos entre si."
+            },
+            {
+              "id": "lg002_q5",
+              "difficulty": 3,
+              "prompt": "Sobre o prazo de validade do concurso público (art. 37, III, da CF/88), é correto afirmar que:",
+              "code": null,
+              "options": [
+                "É de até 2 anos, prorrogável uma vez por igual período.",
+                "É de 5 anos, improrrogável.",
+                "É definido livremente pelo chefe do Executivo, sem limite.",
+                "É de 1 ano, prorrogável indefinidamente.",
+                "Não há prazo constitucional de validade."
+              ],
+              "answerIndex": 0,
+              "explanation": "O concurso público tem prazo de validade de até dois anos, prorrogável uma vez por igual período (art. 37, III)."
+            }
+          ]
+        },
+        {
+          "id": "lg003",
+          "title": "Improbidade Administrativa",
+          "subtitle": "Lei nº 8.429/1992 (com a Lei 14.230/2021)",
+          "icon": "gavel",
+          "color": "0xFF9B59B6",
+          "teaching": [
+            {
+              "title": "Atos de improbidade",
+              "body": "A Lei nº 8.429/1992 define três categorias: atos que importam ENRIQUECIMENTO ILÍCITO (art. 9º), atos que causam PREJUÍZO AO ERÁRIO (art. 10) e atos que ATENTAM CONTRA PRINCÍPIOS da administração pública (art. 11). Após a Lei nº 14.230/2021, a responsabilização exige conduta DOLOSA (a modalidade culposa foi afastada).",
+              "code": null,
+              "linksTo": "Questões sobre tipos de improbidade."
+            },
+            {
+              "title": "Sanções",
+              "body": "As sanções podem incluir: perda da função pública, suspensão dos direitos políticos, ressarcimento integral do dano, perda dos bens acrescidos ilicitamente, pagamento de multa civil e proibição de contratar com o poder público.",
+              "code": null,
+              "linksTo": "Questões sobre sanções da improbidade."
+            }
+          ],
+          "questions": [
+            {
+              "id": "lg003_q1",
+              "difficulty": 1,
+              "prompt": "A lei federal que dispõe sobre as sanções aplicáveis por atos de improbidade administrativa é a:",
+              "code": null,
+              "options": [
+                "Lei nº 8.666/1993",
+                "Lei nº 8.429/1992",
+                "Lei nº 12.288/2010",
+                "Lei nº 11.340/2006",
+                "Lei nº 14.133/2021"
+              ],
+              "answerIndex": 1,
+              "explanation": "A Lei nº 8.429/1992 é a Lei de Improbidade Administrativa (alterada pela Lei nº 14.230/2021)."
+            },
+            {
+              "id": "lg003_q2",
+              "difficulty": 2,
+              "prompt": "O agente público que recebe vantagem econômica indevida para tolerar a prática de infração pratica ato de improbidade que:",
+              "code": null,
+              "options": [
+                "Causa prejuízo ao erário.",
+                "Importa enriquecimento ilícito.",
+                "Apenas atenta contra princípios, sem outra consequência.",
+                "Não configura improbidade.",
+                "É punível somente na esfera penal."
+              ],
+              "answerIndex": 1,
+              "explanation": "Auferir vantagem patrimonial indevida em razão do cargo caracteriza enriquecimento ilícito (art. 9º da Lei 8.429/92)."
+            },
+            {
+              "id": "lg003_q3",
+              "difficulty": 2,
+              "prompt": "Entre as sanções previstas na Lei de Improbidade Administrativa está:",
+              "code": null,
+              "options": [
+                "A pena de prisão em regime fechado.",
+                "A suspensão dos direitos políticos e o ressarcimento integral do dano.",
+                "A cassação da aposentadoria de qualquer cidadão.",
+                "O confisco de todos os bens da família.",
+                "A perda automática da nacionalidade."
+              ],
+              "answerIndex": 1,
+              "explanation": "A lei prevê, entre outras, perda da função pública, suspensão dos direitos políticos, ressarcimento do dano, multa civil e proibição de contratar com o poder público."
+            },
+            {
+              "id": "lg003_q4",
+              "difficulty": 3,
+              "prompt": "Após a alteração promovida pela Lei nº 14.230/2021, a configuração de ato de improbidade administrativa passou a exigir:",
+              "code": null,
+              "options": [
+                "Apenas a ocorrência do dano, independentemente de intenção.",
+                "A comprovação de dolo (conduta dolosa) do agente.",
+                "Somente culpa leve do servidor.",
+                "Prévia condenação criminal.",
+                "Autorização do Tribunal de Contas."
+              ],
+              "answerIndex": 1,
+              "explanation": "Com a Lei 14.230/2021, exige-se dolo — a responsabilização por improbidade na modalidade culposa foi afastada."
+            }
+          ]
+        },
+        {
+          "id": "lg004",
+          "title": "Estatutos de Proteção de Direitos",
+          "subtitle": "Idoso, PcD, Maria da Penha e Reforma Psiquiátrica",
+          "icon": "person",
+          "color": "0xFF9B59B6",
+          "teaching": [
+            {
+              "title": "Pessoa Idosa e Pessoa com Deficiência",
+              "body": "Estatuto da Pessoa Idosa (Lei nº 10.741/2003): considera idosa a pessoa com idade IGUAL OU SUPERIOR A 60 ANOS, assegurando prioridade e proteção integral. Estatuto da Pessoa com Deficiência – LBI (Lei nº 13.146/2015): promove a inclusão e o exercício de direitos em igualdade de condições, com foco em acessibilidade.",
+              "code": null,
+              "linksTo": "Questões sobre idoso e PcD."
+            },
+            {
+              "title": "Maria da Penha e Reforma Psiquiátrica",
+              "body": "Lei Maria da Penha (Lei nº 11.340/2006): cria mecanismos para coibir a violência doméstica e familiar contra a mulher, prevendo medidas protetivas de urgência. Lei da Reforma Psiquiátrica (Lei nº 10.216/2001): dispõe sobre a proteção e os direitos das pessoas com transtornos mentais e redireciona o modelo assistencial.",
+              "code": null,
+              "linksTo": "Questões sobre Maria da Penha e saúde mental."
+            }
+          ],
+          "questions": [
+            {
+              "id": "lg004_q1",
+              "difficulty": 1,
+              "prompt": "Segundo o Estatuto da Pessoa Idosa (Lei nº 10.741/2003), é considerada idosa a pessoa com idade:",
+              "code": null,
+              "options": [
+                "Igual ou superior a 55 anos.",
+                "Igual ou superior a 60 anos.",
+                "Igual ou superior a 65 anos.",
+                "Superior a 70 anos.",
+                "Igual ou superior a 50 anos."
+              ],
+              "answerIndex": 1,
+              "explanation": "O Estatuto considera idosa a pessoa com idade igual ou superior a 60 anos."
+            },
+            {
+              "id": "lg004_q2",
+              "difficulty": 1,
+              "prompt": "A Lei nº 11.340/2006 (Lei Maria da Penha) tem por finalidade:",
+              "code": null,
+              "options": [
+                "Regular as relações de consumo.",
+                "Coibir a violência doméstica e familiar contra a mulher.",
+                "Disciplinar as licitações públicas.",
+                "Proteger os direitos autorais.",
+                "Organizar a carreira dos servidores."
+              ],
+              "answerIndex": 1,
+              "explanation": "A Lei Maria da Penha cria mecanismos para coibir e prevenir a violência doméstica e familiar contra a mulher, incluindo medidas protetivas de urgência."
+            },
+            {
+              "id": "lg004_q3",
+              "difficulty": 2,
+              "prompt": "A Lei Brasileira de Inclusão da Pessoa com Deficiência (Lei nº 13.146/2015) tem como objetivo:",
+              "code": null,
+              "options": [
+                "Restringir o acesso de pessoas com deficiência a cargos públicos.",
+                "Assegurar e promover a inclusão social e a cidadania das pessoas com deficiência em igualdade de condições.",
+                "Tratar exclusivamente de benefícios previdenciários.",
+                "Substituir o Estatuto da Pessoa Idosa.",
+                "Regular apenas o transporte público."
+              ],
+              "answerIndex": 1,
+              "explanation": "A LBI visa assegurar e promover, em igualdade de condições, o exercício dos direitos e liberdades das pessoas com deficiência, com destaque para a acessibilidade."
+            },
+            {
+              "id": "lg004_q4",
+              "difficulty": 2,
+              "prompt": "A Lei nº 10.216/2001 (Reforma Psiquiátrica) dispõe sobre:",
+              "code": null,
+              "options": [
+                "A proteção e os direitos das pessoas com transtornos mentais e o redirecionamento do modelo assistencial.",
+                "A organização do sistema penitenciário.",
+                "A carreira dos profissionais de saúde.",
+                "O financiamento dos hospitais privados.",
+                "O registro civil de nascimentos."
+              ],
+              "answerIndex": 0,
+              "explanation": "A lei protege os direitos das pessoas com transtornos mentais e redireciona a assistência, priorizando o cuidado em serviços comunitários em vez da internação como regra."
+            }
+          ]
+        },
+        {
+          "id": "lg005",
+          "title": "Igualdade Racial e Direitos Humanos",
+          "subtitle": "Lei 12.288/2010, legislação do RS e conceitos",
+          "icon": "public",
+          "color": "0xFF9B59B6",
+          "teaching": [
+            {
+              "title": "Estatuto da Igualdade Racial",
+              "body": "O Estatuto da Igualdade Racial (Lei Federal nº 12.288/2010) destina-se a garantir à população negra a igualdade de oportunidades e a combater a discriminação e as demais formas de intolerância étnica. No RS há o Estatuto Estadual da Igualdade Racial (Lei nº 13.694/2011) e o Decreto nº 48.598/2011, que inclui a temática de gênero, raça e etnia nos concursos públicos.",
+              "code": null,
+              "linksTo": "Questões sobre igualdade racial."
+            },
+            {
+              "title": "Tipos de racismo e discriminação",
+              "body": "Racismo INDIVIDUAL: atitude preconceituosa de uma pessoa. Racismo INSTITUCIONAL: práticas e normas de instituições que produzem desvantagens a um grupo racial, ainda que sem intenção explícita. Racismo ESTRUTURAL: enraizado na organização social, gerando desigualdades históricas e sistêmicas. Outros conceitos: sexismo, etarismo, intolerância religiosa, LGBTfobia, aporofobia (aversão a pessoas pobres), psicofobia e CAPACITISMO (discriminação contra pessoas com deficiência).",
+              "code": null,
+              "linksTo": "Questões sobre conceitos de discriminação."
+            }
+          ],
+          "questions": [
+            {
+              "id": "lg005_q1",
+              "difficulty": 1,
+              "prompt": "O Estatuto da Igualdade Racial é instituído pela:",
+              "code": null,
+              "options": [
+                "Lei Federal nº 12.288/2010.",
+                "Lei Federal nº 11.340/2006.",
+                "Lei Federal nº 8.429/1992.",
+                "Lei Federal nº 10.741/2003.",
+                "Lei Federal nº 13.146/2015."
+              ],
+              "answerIndex": 0,
+              "explanation": "A Lei nº 12.288/2010 institui o Estatuto da Igualdade Racial, voltado a garantir igualdade de oportunidades à população negra."
+            },
+            {
+              "id": "lg005_q2",
+              "difficulty": 2,
+              "prompt": "Práticas e normas de uma instituição que, mesmo sem intenção individual declarada, produzem desvantagens sistemáticas a um grupo racial caracterizam o racismo:",
+              "code": null,
+              "options": [
+                "Individual.",
+                "Institucional.",
+                "Reverso.",
+                "Ocasional.",
+                "Explícito."
+              ],
+              "answerIndex": 1,
+              "explanation": "O racismo institucional se manifesta no funcionamento de instituições (públicas ou privadas) que perpetuam desigualdades raciais, independentemente da intenção de indivíduos."
+            },
+            {
+              "id": "lg005_q3",
+              "difficulty": 2,
+              "prompt": "O termo CAPACITISMO refere-se à discriminação ou preconceito contra:",
+              "code": null,
+              "options": [
+                "Pessoas idosas.",
+                "Pessoas com deficiência.",
+                "Pessoas em situação de pobreza.",
+                "Pessoas de determinada religião.",
+                "Pessoas de baixa escolaridade."
+              ],
+              "answerIndex": 1,
+              "explanation": "Capacitismo é a discriminação contra pessoas com deficiência. (Etarismo = idosos; aporofobia = pessoas pobres; intolerância religiosa = religião.)"
+            },
+            {
+              "id": "lg005_q4",
+              "difficulty": 3,
+              "prompt": "O racismo ESTRUTURAL distingue-se por:",
+              "code": null,
+              "options": [
+                "Ser um ato isolado e pontual de uma pessoa.",
+                "Estar enraizado na organização social, econômica e política, produzindo desigualdades históricas e sistêmicas.",
+                "Ocorrer apenas em ambientes virtuais.",
+                "Depender sempre de intenção consciente e declarada.",
+                "Referir-se somente a leis já revogadas."
+              ],
+              "answerIndex": 1,
+              "explanation": "O racismo estrutural integra a própria estrutura da sociedade, reproduzindo desvantagens de forma sistemática e histórica, para além de atos individuais."
+            }
+          ]
+        },
+        {
+          "id": "lg006",
+          "title": "Legislação Municipal de Novo Hamburgo",
+          "subtitle": "Lei Orgânica, Estatuto do Servidor e Posturas",
+          "icon": "location_city",
+          "color": "0xFF9B59B6",
+          "teaching": [
+            {
+              "title": "Confira o texto oficial das leis municipais",
+              "body": "O edital cobra a LEI ORGÂNICA do Município, o PLANO DE CARREIRA (Lei nº 334/2000), o ESTATUTO DO SERVIDOR PÚBLICO (Lei Municipal nº 333/2000) e o CÓDIGO DE POSTURAS (Lei nº 3.275/2020). O edital apenas cita essas leis — para acertar artigos específicos, estude o TEXTO OFICIAL de cada uma. As questões abaixo cobrem a estrutura geral desses diplomas; ajuste-as ao texto legal quando o obtiver.",
+              "code": null,
+              "linksTo": "Aviso de estudo — baixe as leis municipais."
+            },
+            {
+              "title": "O que cada lei trata",
+              "body": "Lei Orgânica: é a 'constituição' do município, organiza sua estrutura, competências e princípios. Estatuto do Servidor (Lei 333/2000): regime jurídico dos servidores — provimento (posse, exercício), estágio probatório, estabilidade, direitos, deveres, proibições e penalidades. Plano de Carreira (Lei 334/2000): cargos, classes, progressão e remuneração. Código de Posturas (Lei 3.275/2020): normas de convivência urbana (higiene, ruídos, funcionamento de estabelecimentos, uso de vias e espaços públicos).",
+              "code": null,
+              "linksTo": "Questões sobre a legislação municipal."
+            }
+          ],
+          "questions": [
+            {
+              "id": "lg006_q1",
+              "difficulty": 1,
+              "prompt": "O regime jurídico dos servidores públicos de Novo Hamburgo, previsto no Estatuto do Servidor (Lei Municipal nº 333/2000), é:",
+              "code": null,
+              "options": [
+                "Celetista, regido pela CLT.",
+                "Estatutário, regido por lei própria do município.",
+                "Contrato temporário renovável anualmente.",
+                "Definido por convenção coletiva.",
+                "Regido apenas por decreto do prefeito."
+              ],
+              "answerIndex": 1,
+              "explanation": "O município adota o regime estatutário: os servidores são regidos pelo Estatuto (Lei nº 333/2000), e não pela CLT."
+            },
+            {
+              "id": "lg006_q2",
+              "difficulty": 2,
+              "prompt": "A Lei Orgânica Municipal, no âmbito do município, tem papel equivalente ao(à):",
+              "code": null,
+              "options": [
+                "Regimento interno de uma repartição.",
+                "Constituição, por ser a norma máxima que organiza o município.",
+                "Contrato administrativo.",
+                "Portaria de nomeação.",
+                "Edital de concurso."
+              ],
+              "answerIndex": 1,
+              "explanation": "A Lei Orgânica é a norma fundamental do município: organiza sua estrutura, competências e princípios, tal como uma constituição em âmbito local."
+            },
+            {
+              "id": "lg006_q3",
+              "difficulty": 2,
+              "prompt": "O Código de Posturas Municipal (Lei nº 3.275/2020) disciplina, tipicamente:",
+              "code": null,
+              "options": [
+                "O regime de aposentadoria dos servidores.",
+                "Normas de convivência urbana, como higiene, ruídos, funcionamento de estabelecimentos e uso de espaços públicos.",
+                "As competências do Poder Judiciário.",
+                "A carreira do magistério.",
+                "As regras de licitação do município."
+              ],
+              "answerIndex": 1,
+              "explanation": "O Código de Posturas trata das regras de convivência e do ordenamento urbano (limpeza, ruídos, funcionamento de estabelecimentos, uso das vias e espaços públicos)."
+            },
+            {
+              "id": "lg006_q4",
+              "difficulty": 1,
+              "prompt": "A estabilidade e o estágio probatório do servidor público municipal de Novo Hamburgo estão disciplinados:",
+              "code": null,
+              "options": [
+                "Na Consolidação das Leis do Trabalho (CLT).",
+                "No Estatuto do Servidor Público municipal (Lei nº 333/2000).",
+                "No Código de Posturas.",
+                "Na Lei de Licitações.",
+                "Em portaria da Secretaria de Administração."
+              ],
+              "answerIndex": 1,
+              "explanation": "O provimento, o estágio probatório, a estabilidade, os deveres e as penalidades dos servidores constam do Estatuto do Servidor municipal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "con_portugues",
+      "name": "Língua Portuguesa",
+      "subtitle": "Interpretação, crase, concordância e pontuação",
+      "icon": "menu_book",
+      "color": "0xFFFF9600",
+      "track": "Concurso — Analista de Sistemas (FUNDATEC · Novo Hamburgo)",
+      "modules": [
+        {
+          "id": "pt001",
+          "title": "Interpretação e Inferência",
+          "subtitle": "Ideia principal, inferência e sentidos",
+          "icon": "menu_book",
+          "color": "0xFFFF9600",
+          "teaching": [
+            {
+              "title": "Interpretar x extrapolar",
+              "body": "Interpretar é entender o que o texto diz (explícito) e o que ele deixa subentendido (inferência). Cuidado: NÃO se pode 'extrapolar' com opiniões que o texto não sustenta. Inferir é concluir algo com base em pistas do próprio texto.",
+              "code": null,
+              "linksTo": "Questões de interpretação."
+            },
+            {
+              "title": "Denotação x conotação",
+              "body": "Sentido denotativo é o literal, do dicionário. Sentido conotativo é o figurado, que depende do contexto (ex.: 'ele é uma raposa' = astuto).",
+              "code": null,
+              "linksTo": "Questões sobre sentido das palavras."
+            }
+          ],
+          "questions": [
+            {
+              "id": "pt001_q1",
+              "difficulty": 1,
+              "prompt": "Inferir uma informação em um texto significa:",
+              "code": null,
+              "options": [
+                "Repetir literalmente o que está escrito.",
+                "Concluir algo que não está explícito, mas se apoia em pistas do texto.",
+                "Discordar do autor.",
+                "Resumir o primeiro parágrafo.",
+                "Corrigir erros gramaticais."
+              ],
+              "answerIndex": 1,
+              "explanation": "A inferência é uma conclusão lógica construída a partir de elementos presentes (ainda que implícitos) no texto."
+            },
+            {
+              "id": "pt001_q2",
+              "difficulty": 1,
+              "prompt": "Na frase 'Após o escândalo, o político virou uma raposa para escapar das acusações', a palavra 'raposa' está empregada em sentido:",
+              "code": null,
+              "options": [
+                "Denotativo (literal).",
+                "Conotativo (figurado), indicando astúcia.",
+                "Científico.",
+                "Regional.",
+                "Antônimo."
+              ],
+              "answerIndex": 1,
+              "explanation": "'Raposa' aqui é conotativa: sugere esperteza/astúcia, não o animal literal."
+            },
+            {
+              "id": "pt001_q3",
+              "difficulty": 2,
+              "prompt": "Leia: 'Embora tenha estudado bastante, não obteve a aprovação que esperava.' O conectivo 'embora' estabelece uma relação de:",
+              "code": null,
+              "options": [
+                "Causa",
+                "Concessão (contraste com o esperado).",
+                "Conclusão",
+                "Finalidade",
+                "Adição"
+              ],
+              "answerIndex": 1,
+              "explanation": "'Embora' introduz oração concessiva: admite um fato que contraria a expectativa da oração principal."
+            },
+            {
+              "id": "pt001_q4",
+              "difficulty": 2,
+              "prompt": "A ideia principal de um texto corresponde:",
+              "code": null,
+              "options": [
+                "A um detalhe isolado de um parágrafo.",
+                "Ao tema central que organiza e sustenta o conjunto das informações.",
+                "À opinião do leitor sobre o assunto.",
+                "Sempre à última frase do texto.",
+                "A uma palavra do título."
+              ],
+              "answerIndex": 1,
+              "explanation": "A ideia principal é o núcleo argumentativo/temático em torno do qual as demais informações se articulam."
+            }
+          ]
+        },
+        {
+          "id": "pt002",
+          "title": "Crase, Regência e Concordância",
+          "subtitle": "Os erros mais cobrados em prova",
+          "icon": "spellcheck",
+          "color": "0xFFFF9600",
+          "teaching": [
+            {
+              "title": "Crase",
+              "body": "Crase é a fusão da preposição 'a' com o artigo 'a(s)' (a + a = à). NÃO há crase antes de verbo, de palavra masculina e de pronomes (ex.: começou a estudar; vou a pé). Há crase em 'à feira', 'à noite', 'às 8 horas'.",
+              "code": null,
+              "linksTo": "Questões sobre uso da crase."
+            },
+            {
+              "title": "Concordância e regência",
+              "body": "Concordância verbal: o verbo concorda com o sujeito. O verbo FAZER indicando tempo decorrido é impessoal: 'Faz dois anos' (nunca 'fazem'). Regência: 'assistir' no sentido de ver pede preposição — 'assistir AO filme'.",
+              "code": null,
+              "linksTo": "Questões sobre concordância e regência."
+            }
+          ],
+          "questions": [
+            {
+              "id": "pt002_q1",
+              "difficulty": 1,
+              "prompt": "Assinale a alternativa em que o uso da crase está CORRETO:",
+              "code": null,
+              "options": [
+                "Ele começou à trabalhar cedo.",
+                "Refiro-me à pessoa que chegou.",
+                "Ela foi à pé até a escola.",
+                "Entreguei o livro à ele.",
+                "Cheguei à este lugar ontem."
+              ],
+              "answerIndex": 1,
+              "explanation": "'Refiro-me à pessoa': o verbo referir-se exige 'a' e 'pessoa' admite artigo 'a' → crase. Antes de verbo ('a trabalhar'), palavra masculina ('a pé') e pronomes ('a ele', 'a este') não há crase."
+            },
+            {
+              "id": "pt002_q2",
+              "difficulty": 1,
+              "prompt": "Antes de VERBO, ocorre crase?",
+              "code": null,
+              "options": [
+                "Sim, sempre.",
+                "Não, pois não há artigo antes de verbo.",
+                "Somente com verbos no infinitivo.",
+                "Apenas em textos formais.",
+                "Sim, quando o verbo é feminino."
+              ],
+              "answerIndex": 1,
+              "explanation": "Não há crase antes de verbo, porque verbo não admite artigo (ex.: 'disposto a colaborar')."
+            },
+            {
+              "id": "pt002_q3",
+              "difficulty": 2,
+              "prompt": "Assinale a frase CORRETA quanto à concordância verbal:",
+              "code": null,
+              "options": [
+                "Fazem dez anos que ele saiu.",
+                "Houveram muitos problemas na reunião.",
+                "Faz dez anos que ele saiu.",
+                "Existe muitos candidatos aprovados.",
+                "Aconteceram um acidente na via."
+              ],
+              "answerIndex": 2,
+              "explanation": "O verbo 'fazer' indicando tempo decorrido é impessoal e fica no singular: 'Faz dez anos'. O mesmo vale para 'houve' (haver = existir é impessoal)."
+            },
+            {
+              "id": "pt002_q4",
+              "difficulty": 2,
+              "prompt": "Na frase 'Ontem ______ ao filme premiado no cinema', a regência correta do verbo assistir (no sentido de ver) exige:",
+              "code": null,
+              "options": [
+                "assisti o filme",
+                "assisti no filme",
+                "assisti ao filme",
+                "assisti do filme",
+                "assisti com o filme"
+              ],
+              "answerIndex": 2,
+              "explanation": "No sentido de 'ver/presenciar', 'assistir' é transitivo indireto e rege a preposição 'a': 'assistir ao filme'."
+            },
+            {
+              "id": "pt002_q5",
+              "difficulty": 3,
+              "prompt": "Sobre a crase antes de nomes próprios femininos e pronomes possessivos, é correto afirmar que:",
+              "code": null,
+              "options": [
+                "É sempre obrigatória.",
+                "É sempre proibida.",
+                "Diante de pronome possessivo feminino singular, a crase é facultativa (ex.: 'Referiu-se à/a sua proposta').",
+                "Nunca ocorre diante de nomes de cidade.",
+                "Só ocorre em início de frase."
+              ],
+              "answerIndex": 2,
+              "explanation": "Diante de possessivo feminino singular o artigo é opcional, tornando a crase facultativa; diante de nomes de cidade, depende de a cidade admitir artigo."
+            }
+          ]
+        },
+        {
+          "id": "pt003",
+          "title": "Coesão, Coerência e Pontuação",
+          "subtitle": "Conectivos, referência e vírgula",
+          "icon": "article",
+          "color": "0xFFFF9600",
+          "teaching": [
+            {
+              "title": "Coesão x coerência",
+              "body": "Coesão é a amarração entre as partes do texto (conectivos, pronomes que retomam termos). Coerência é o sentido lógico global. Conectores de oposição: porém, contudo, todavia, entretanto, no entanto.",
+              "code": null,
+              "linksTo": "Questões sobre conectivos e referência."
+            },
+            {
+              "title": "Pontuação: a vírgula",
+              "body": "Regra clássica: NÃO se separa o sujeito do seu verbo por vírgula. A vírgula é usada para isolar apostos, vocativos, adjuntos deslocados e itens de uma enumeração.",
+              "code": null,
+              "linksTo": "Questões sobre uso da vírgula."
+            }
+          ],
+          "questions": [
+            {
+              "id": "pt003_q1",
+              "difficulty": 1,
+              "prompt": "Assinale a afirmação CORRETA sobre o uso da vírgula:",
+              "code": null,
+              "options": [
+                "Deve-se separar o sujeito do verbo com vírgula.",
+                "Não se usa vírgula entre o sujeito e o verbo da oração.",
+                "A vírgula é proibida em enumerações.",
+                "A vírgula sempre substitui o ponto final.",
+                "Vocativos nunca são isolados por vírgula."
+              ],
+              "answerIndex": 1,
+              "explanation": "Uma das regras básicas: não se separa o sujeito do predicado (verbo) por vírgula."
+            },
+            {
+              "id": "pt003_q2",
+              "difficulty": 2,
+              "prompt": "Qual conectivo estabelece uma relação de OPOSIÇÃO/contraste entre orações?",
+              "code": null,
+              "options": [
+                "portanto",
+                "contudo",
+                "porque",
+                "assim que",
+                "a fim de que"
+              ],
+              "answerIndex": 1,
+              "explanation": "'Contudo' (como porém, todavia, entretanto) indica oposição. 'Portanto' é conclusão; 'porque' é causa."
+            },
+            {
+              "id": "pt003_q3",
+              "difficulty": 2,
+              "prompt": "Em 'Os candidatos que estudaram foram aprovados', a palavra 'que':",
+              "code": null,
+              "options": [
+                "É uma conjunção integrante.",
+                "É um pronome relativo que retoma 'candidatos'.",
+                "É um advérbio de intensidade.",
+                "É uma preposição.",
+                "É uma interjeição."
+              ],
+              "answerIndex": 1,
+              "explanation": "Aqui 'que' é pronome relativo: retoma o antecedente 'candidatos' e introduz a oração adjetiva."
+            },
+            {
+              "id": "pt003_q4",
+              "difficulty": 1,
+              "prompt": "A coesão referencial ocorre quando:",
+              "code": null,
+              "options": [
+                "Uma palavra é escrita de forma incorreta.",
+                "Um pronome ou expressão retoma um termo já mencionado, evitando repetição.",
+                "O texto muda de assunto sem aviso.",
+                "Faltam conectivos no parágrafo.",
+                "O texto é longo demais."
+              ],
+              "answerIndex": 1,
+              "explanation": "A coesão referencial usa elementos (pronomes, sinônimos) para retomar termos anteriores, dando unidade ao texto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "con_matematica",
+      "name": "Matemática / Raciocínio Lógico",
+      "subtitle": "Porcentagem, lógica proposicional e sequências",
+      "icon": "calculate",
+      "color": "0xFF16A085",
+      "track": "Concurso — Analista de Sistemas (FUNDATEC · Novo Hamburgo)",
+      "modules": [
+        {
+          "id": "ml001",
+          "title": "Porcentagem, Regra de Três e Proporção",
+          "subtitle": "Cálculos rápidos que garantem pontos",
+          "icon": "percent",
+          "color": "0xFF16A085",
+          "teaching": [
+            {
+              "title": "Porcentagem",
+              "body": "x% de um valor = (x/100) × valor. Um desconto de 25% deixa 75% do preço. Cuidado com aumentos sucessivos: 10% seguido de 10% NÃO é 20% (é 21%), pois o segundo incide sobre o valor já aumentado.",
+              "code": null,
+              "linksTo": "Questões de porcentagem."
+            },
+            {
+              "title": "Regra de três",
+              "body": "Diretamente proporcional: mais de um → mais do outro. Inversamente proporcional: mais de um → menos do outro (ex.: mais operários, menos dias). Na inversa, invertemos uma das razões antes de multiplicar em cruz.",
+              "code": null,
+              "linksTo": "Questões de regra de três e proporção."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ml001_q1",
+              "difficulty": 1,
+              "prompt": "Quanto é 20% de 250?",
+              "code": null,
+              "options": [
+                "25",
+                "40",
+                "50",
+                "60",
+                "75"
+              ],
+              "answerIndex": 2,
+              "explanation": "20% de 250 = 0,20 × 250 = 50."
+            },
+            {
+              "id": "ml001_q2",
+              "difficulty": 1,
+              "prompt": "Um produto que custa R$ 80,00 recebe 25% de desconto. O novo preço é:",
+              "code": null,
+              "options": [
+                "R$ 55,00",
+                "R$ 60,00",
+                "R$ 65,00",
+                "R$ 70,00",
+                "R$ 75,00"
+              ],
+              "answerIndex": 1,
+              "explanation": "25% de 80 = 20; 80 − 20 = R$ 60,00 (ou 75% de 80 = 60)."
+            },
+            {
+              "id": "ml001_q3",
+              "difficulty": 2,
+              "prompt": "Se 3 operários constroem um muro em 12 dias, quantos dias levarão 6 operários, no mesmo ritmo?",
+              "code": null,
+              "options": [
+                "24 dias",
+                "12 dias",
+                "8 dias",
+                "6 dias",
+                "4 dias"
+              ],
+              "answerIndex": 3,
+              "explanation": "Grandezas inversamente proporcionais: dobrando os operários, o tempo cai pela metade → 6 dias."
+            },
+            {
+              "id": "ml001_q4",
+              "difficulty": 2,
+              "prompt": "Um valor de R$ 100,00 sofre um aumento de 10% e, em seguida, novo aumento de 10% sobre o valor já reajustado. O valor final é:",
+              "code": null,
+              "options": [
+                "R$ 110,00",
+                "R$ 120,00",
+                "R$ 121,00",
+                "R$ 122,00",
+                "R$ 200,00"
+              ],
+              "answerIndex": 2,
+              "explanation": "100 × 1,10 = 110; 110 × 1,10 = 121. Aumentos sucessivos não se somam diretamente."
+            },
+            {
+              "id": "ml001_q5",
+              "difficulty": 3,
+              "prompt": "Na proporção 2/3 = x/12, o valor de x é:",
+              "code": null,
+              "options": [
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "answerIndex": 2,
+              "explanation": "Multiplicando em cruz: 3x = 24 → x = 8."
+            }
+          ]
+        },
+        {
+          "id": "ml002",
+          "title": "Lógica Proposicional",
+          "subtitle": "Conectivos, tabela-verdade e negações",
+          "icon": "psychology",
+          "color": "0xFF16A085",
+          "teaching": [
+            {
+              "title": "Conectivos e valores-verdade",
+              "body": "Conjunção (p ∧ q): verdadeira só quando ambas são verdadeiras. Disjunção (p ∨ q): verdadeira quando ao menos uma é verdadeira. Condicional (p → q): FALSA somente quando p é verdadeira e q é falsa.",
+              "code": null,
+              "linksTo": "Questões de tabela-verdade."
+            },
+            {
+              "title": "Negações e equivalências",
+              "body": "Negação de 'todo A é B' = 'algum A não é B' (existe A que não é B). A contrapositiva de p → q é ~q → ~p (equivalente à original). Negar uma condicional: ~(p → q) equivale a p ∧ ~q.",
+              "code": null,
+              "linksTo": "Questões de negação e equivalência."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ml002_q1",
+              "difficulty": 1,
+              "prompt": "A proposição condicional 'p → q' (se p então q) é FALSA somente quando:",
+              "code": null,
+              "options": [
+                "p é falsa e q é verdadeira.",
+                "p é verdadeira e q é falsa.",
+                "ambas são verdadeiras.",
+                "ambas são falsas.",
+                "p é falsa e q é falsa."
+              ],
+              "answerIndex": 1,
+              "explanation": "A condicional só é falsa no caso V → F (antecedente verdadeiro e consequente falso)."
+            },
+            {
+              "id": "ml002_q2",
+              "difficulty": 2,
+              "prompt": "A negação da proposição 'Todo aluno foi aprovado' é:",
+              "code": null,
+              "options": [
+                "Nenhum aluno foi aprovado.",
+                "Todo aluno foi reprovado.",
+                "Pelo menos um aluno não foi aprovado.",
+                "Todos os alunos foram aprovados.",
+                "Alguns alunos foram aprovados."
+              ],
+              "answerIndex": 2,
+              "explanation": "A negação de 'todo A é B' é 'existe (pelo menos um) A que não é B'."
+            },
+            {
+              "id": "ml002_q3",
+              "difficulty": 2,
+              "prompt": "A proposição equivalente (contrapositiva) a 'Se chove, então a rua fica molhada' é:",
+              "code": null,
+              "options": [
+                "Se a rua fica molhada, então chove.",
+                "Se não chove, então a rua não fica molhada.",
+                "Se a rua não fica molhada, então não chove.",
+                "Chove e a rua não fica molhada.",
+                "A rua fica molhada e não chove."
+              ],
+              "answerIndex": 2,
+              "explanation": "A contrapositiva de p → q é ~q → ~p: 'Se a rua não fica molhada, então não chove'."
+            },
+            {
+              "id": "ml002_q4",
+              "difficulty": 3,
+              "prompt": "A disjunção inclusiva 'p ∨ q' (p ou q) é VERDADEIRA quando:",
+              "code": null,
+              "options": [
+                "ambas as proposições são falsas.",
+                "pelo menos uma das proposições é verdadeira.",
+                "somente quando ambas são verdadeiras.",
+                "p é falsa e q é falsa.",
+                "nunca é verdadeira."
+              ],
+              "answerIndex": 1,
+              "explanation": "A disjunção inclusiva é verdadeira se ao menos uma das proposições for verdadeira; só é falsa quando ambas são falsas."
+            }
+          ]
+        },
+        {
+          "id": "ml003",
+          "title": "Sequências e Conjuntos",
+          "subtitle": "Padrões numéricos e teoria dos conjuntos",
+          "icon": "functions",
+          "color": "0xFF16A085",
+          "teaching": [
+            {
+              "title": "Sequências",
+              "body": "Identifique o padrão: soma constante (progressão aritmética, ex.: 3,7,11,15 — razão 4) ou multiplicação constante (progressão geométrica, ex.: 2,4,8,16 — razão 2).",
+              "code": null,
+              "linksTo": "Questões de padrões numéricos."
+            },
+            {
+              "title": "Conjuntos",
+              "body": "União (A ∪ B): todos os elementos. Interseção (A ∩ B): elementos comuns. Fórmula do número de elementos: n(A ∪ B) = n(A) + n(B) − n(A ∩ B).",
+              "code": null,
+              "linksTo": "Questões de conjuntos."
+            }
+          ],
+          "questions": [
+            {
+              "id": "ml003_q1",
+              "difficulty": 1,
+              "prompt": "Na sequência 2, 4, 8, 16, ..., o próximo termo é:",
+              "code": null,
+              "options": [
+                "18",
+                "24",
+                "30",
+                "32",
+                "64"
+              ],
+              "answerIndex": 3,
+              "explanation": "Cada termo é o dobro do anterior (razão 2): 16 × 2 = 32."
+            },
+            {
+              "id": "ml003_q2",
+              "difficulty": 2,
+              "prompt": "Na sequência 3, 7, 11, 15, ..., o próximo termo é:",
+              "code": null,
+              "options": [
+                "17",
+                "18",
+                "19",
+                "20",
+                "21"
+              ],
+              "answerIndex": 2,
+              "explanation": "É uma progressão aritmética de razão 4: 15 + 4 = 19."
+            },
+            {
+              "id": "ml003_q3",
+              "difficulty": 2,
+              "prompt": "Em uma turma, 18 alunos jogam futebol, 15 jogam vôlei e 8 jogam os dois esportes. Quantos alunos jogam pelo menos um desses esportes?",
+              "code": null,
+              "options": [
+                "23",
+                "25",
+                "26",
+                "33",
+                "41"
+              ],
+              "answerIndex": 1,
+              "explanation": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B) = 18 + 15 − 8 = 25."
+            },
+            {
+              "id": "ml003_q4",
+              "difficulty": 3,
+              "prompt": "Observe: 1, 1, 2, 3, 5, 8, ... Qual é o próximo termo?",
+              "code": null,
+              "options": [
+                "11",
+                "12",
+                "13",
+                "15",
+                "16"
+              ],
+              "answerIndex": 2,
+              "explanation": "É a sequência de Fibonacci: cada termo é a soma dos dois anteriores → 5 + 8 = 13."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "con_gerais",
+      "name": "Conhecimentos Gerais",
+      "subtitle": "Atualidades, LGPD e temas locais do RS/NH",
+      "icon": "public",
+      "color": "0xFFEB5757",
+      "track": "Concurso — Analista de Sistemas (FUNDATEC · Novo Hamburgo)",
+      "modules": [
+        {
+          "id": "cg001",
+          "title": "Atualidades, Gov Digital e LGPD",
+          "subtitle": "LGPD, gov.br, tecnologia e sociedade",
+          "icon": "public",
+          "color": "0xFFEB5757",
+          "teaching": [
+            {
+              "title": "LGPD",
+              "body": "A LGPD (Lei nº 13.709/2018) protege os dados pessoais e regula seu tratamento. Dados pessoais SENSÍVEIS incluem origem racial/étnica, convicção religiosa, opinião política, saúde, vida sexual, dados genéticos e biométricos. A fiscalização cabe à ANPD (Autoridade Nacional de Proteção de Dados).",
+              "code": null,
+              "linksTo": "Questões sobre proteção de dados."
+            },
+            {
+              "title": "Governo digital",
+              "body": "O gov.br é a plataforma unificada de serviços públicos digitais do governo federal, com login e identidade digital do cidadão. Governo digital e IA são temas frequentes de atualidades ligadas à tecnologia.",
+              "code": null,
+              "linksTo": "Questões sobre governo digital."
+            }
+          ],
+          "questions": [
+            {
+              "id": "cg001_q1",
+              "difficulty": 1,
+              "prompt": "A sigla LGPD refere-se à:",
+              "code": null,
+              "options": [
+                "Lei Geral de Proteção de Dados.",
+                "Lei Geral de Processos Digitais.",
+                "Legislação de Governo e Políticas Digitais.",
+                "Lei de Gestão Pública Descentralizada.",
+                "Lei Geral de Publicidade Digital."
+              ],
+              "answerIndex": 0,
+              "explanation": "LGPD = Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018)."
+            },
+            {
+              "id": "cg001_q2",
+              "difficulty": 2,
+              "prompt": "Segundo a LGPD, é considerado dado pessoal SENSÍVEL:",
+              "code": null,
+              "options": [
+                "O nome completo da pessoa.",
+                "O endereço residencial.",
+                "Dado sobre saúde, biometria ou convicção religiosa.",
+                "O número de telefone.",
+                "O e-mail comercial."
+              ],
+              "answerIndex": 2,
+              "explanation": "Dados sensíveis são os que podem gerar discriminação: saúde, biometria, religião, origem racial, opinião política, entre outros."
+            },
+            {
+              "id": "cg001_q3",
+              "difficulty": 2,
+              "prompt": "O órgão responsável por fiscalizar e aplicar a LGPD no Brasil é a:",
+              "code": null,
+              "options": [
+                "Receita Federal",
+                "ANPD (Autoridade Nacional de Proteção de Dados)",
+                "ANATEL",
+                "Polícia Federal",
+                "CGU"
+              ],
+              "answerIndex": 1,
+              "explanation": "A ANPD é a autoridade nacional responsável por zelar, implementar e fiscalizar o cumprimento da LGPD."
+            },
+            {
+              "id": "cg001_q4",
+              "difficulty": 1,
+              "prompt": "A plataforma unificada de serviços públicos digitais do governo federal, com identidade digital do cidadão, é o:",
+              "code": null,
+              "options": [
+                "e-Social",
+                "gov.br",
+                "SISU",
+                "Portal da Transparência",
+                "PIX"
+              ],
+              "answerIndex": 1,
+              "explanation": "O gov.br concentra o acesso a serviços públicos digitais e a identidade digital do cidadão."
+            }
+          ]
+        },
+        {
+          "id": "cg002",
+          "title": "Rio Grande do Sul e Novo Hamburgo",
+          "subtitle": "Geografia, economia e história local",
+          "icon": "location_city",
+          "color": "0xFFEB5757",
+          "teaching": [
+            {
+              "title": "Confira dados locais atualizados",
+              "body": "Concursos municipais cobram história, geografia e atualidades da cidade e do estado. Novo Hamburgo fica no Rio Grande do Sul, na Região Metropolitana de Porto Alegre / Vale do Rio dos Sinos, com forte colonização alemã e tradição no polo coureiro-calçadista. Confirme dados recentes na Lei Orgânica e em fontes oficiais do município.",
+              "code": null,
+              "linksTo": "Questões sobre RS e Novo Hamburgo."
+            }
+          ],
+          "questions": [
+            {
+              "id": "cg002_q1",
+              "difficulty": 1,
+              "prompt": "A capital do estado do Rio Grande do Sul é:",
+              "code": null,
+              "options": [
+                "Caxias do Sul",
+                "Porto Alegre",
+                "Pelotas",
+                "Santa Maria",
+                "Novo Hamburgo"
+              ],
+              "answerIndex": 1,
+              "explanation": "Porto Alegre é a capital do Rio Grande do Sul."
+            },
+            {
+              "id": "cg002_q2",
+              "difficulty": 1,
+              "prompt": "Historicamente, Novo Hamburgo é reconhecida como um importante polo:",
+              "code": null,
+              "options": [
+                "Petroquímico",
+                "Coureiro-calçadista (calçados).",
+                "Automobilístico",
+                "Siderúrgico",
+                "Aeronáutico"
+              ],
+              "answerIndex": 1,
+              "explanation": "Novo Hamburgo é tradicionalmente conhecida pela indústria de couro e calçados (polo coureiro-calçadista)."
+            },
+            {
+              "id": "cg002_q3",
+              "difficulty": 2,
+              "prompt": "Novo Hamburgo localiza-se na região conhecida como:",
+              "code": null,
+              "options": [
+                "Serra Gaúcha, no nordeste do estado.",
+                "Vale do Rio dos Sinos / Região Metropolitana de Porto Alegre.",
+                "Campanha Gaúcha, na fronteira oeste.",
+                "Litoral Norte.",
+                "Região das Missões."
+              ],
+              "answerIndex": 1,
+              "explanation": "O município integra o Vale do Rio dos Sinos, na Região Metropolitana de Porto Alegre."
+            },
+            {
+              "id": "cg002_q4",
+              "difficulty": 2,
+              "prompt": "A formação histórica de Novo Hamburgo está fortemente ligada à:",
+              "code": null,
+              "options": [
+                "Imigração japonesa.",
+                "Colonização alemã.",
+                "Colonização holandesa.",
+                "Imigração árabe.",
+                "Colonização espanhola."
+              ],
+              "answerIndex": 1,
+              "explanation": "A cidade tem forte influência da imigração/colonização alemã, refletida em sua cultura e no próprio nome."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "con_provas",
+      "name": "Provas Anteriores — FUNDATEC",
+      "subtitle": "Questões reais que já caíram (banca FUNDATEC)",
+      "icon": "article",
+      "color": "0xFF2D9CDB",
+      "track": "Concurso — Analista de Sistemas (FUNDATEC · Novo Hamburgo)",
+      "modules": [
+        {
+          "id": "pf_ti",
+          "title": "Prova FUNDATEC — TI",
+          "subtitle": "Questões reais: banco de dados, SQL, Java, PHP e UML",
+          "icon": "memory",
+          "color": "0xFF1CB0F6",
+          "teaching": [
+            {
+              "title": "Questões que já caíram",
+              "body": "Estas são questões REAIS aplicadas pela FUNDATEC (concurso SPGG/RS 2022, cargo Analista de Sistemas), com o gabarito oficial. Servem para você sentir o estilo da banca: enunciados longos, pegadinhas em SQL/Java e foco em fundamentos de banco de dados. Leia com atenção — a banca costuma cobrar detalhes.",
+              "code": null,
+              "linksTo": "Contextualização das questões reais."
+            }
+          ],
+          "questions": [
+            {
+              "id": "pf_ti_q1",
+              "difficulty": 1,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Um programador criou a tabela \"funcionarios\" em um Oracle Database, mas a empresa exige que os nomes de tabela comecem por \"tb_\". Qual comando é uma solução válida para renomear a tabela?",
+              "code": null,
+              "options": [
+                "RENAME funcionarios TO tb_funcionarios;",
+                "RENAME funcionarios tb_funcionarios;",
+                "REN funcionarios TO tb_funcionarios;",
+                "MOVE funcionarios tb_funcionarios;",
+                "MOVE funcionarios TO tb_funcionarios;"
+              ],
+              "answerIndex": 0,
+              "explanation": "Gabarito oficial: A. No Oracle, o comando de renomear tabela é RENAME <antiga> TO <nova>;"
+            },
+            {
+              "id": "pf_ti_q2",
+              "difficulty": 1,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Após corrigir a compilação, qual código Java 8 imprime na saída padrão o texto \"SPGG\" percorrendo a List<String> chamada 'lista' (que contém 'S','P','G','G')?",
+              "code": null,
+              "options": [
+                "for (int i = 0; i<lista.size();i++) {System.out.print(lista[i]);}",
+                "for (int i = 0; i<lista.length();i++) {System.out.println(lista.get(i));}",
+                "foreach (String item in lista) {System.out.print(item);}",
+                "for (String item : lista) {System.out.print(item);}",
+                "foreach (String item in List<String> lista) {System.out.print(item);}"
+              ],
+              "answerIndex": 3,
+              "explanation": "Gabarito oficial: D. Em Java usa-se o for-each 'for (String item : lista)'; List não usa colchetes [] (isso é array) nem 'foreach' (isso é C#)."
+            },
+            {
+              "id": "pf_ti_q3",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) O comando 'select 1,2,3 from dual;' funciona no Oracle. Para obter o mesmo resultado no MySQL Community 5, quais itens são válidos?\nI. select 1,2,3 from dual;\nII. select 1,2,3;\nIII. select 1,2,3 from dummy;",
+              "code": null,
+              "options": [
+                "Apenas I.",
+                "Apenas II.",
+                "Apenas III.",
+                "Apenas I e II.",
+                "Apenas II e III."
+              ],
+              "answerIndex": 3,
+              "explanation": "Gabarito oficial: D. No MySQL a tabela DUAL existe e o FROM é opcional em selects de constantes, então I e II funcionam; 'dummy' não existe."
+            },
+            {
+              "id": "pf_ti_q4",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) O MySQL Workbench é uma ferramenta gráfica para MySQL. Complete: a funcionalidade de __________ transforma __________ em __________.",
+              "code": null,
+              "options": [
+                "engenharia reversa – uma base de dados – um modelo",
+                "engenharia reversa – um modelo – uma base de dados",
+                "migração – um banco de dados MySQL – um banco de dados PostgreSQL",
+                "migração – um banco de dados MySQL – um banco de dados Access",
+                "migração – um modelo – uma base de dados"
+              ],
+              "answerIndex": 0,
+              "explanation": "Gabarito oficial: A. Engenharia reversa parte de uma base de dados existente e gera o modelo (diagrama). O caminho inverso (modelo → base) é a engenharia direta/forward."
+            },
+            {
+              "id": "pf_ti_q5",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) As técnicas de controle de concorrência operam sobre itens de dados que podem ser um campo, um bloco de disco, um arquivo ou todo o banco. A escolha do tamanho do item de dados afeta qual aspecto do controle de concorrência?",
+              "code": null,
+              "options": [
+                "Cardinalidade.",
+                "Multiplicidade.",
+                "Granularidade.",
+                "Confiabilidade.",
+                "Atomicidade."
+              ],
+              "answerIndex": 2,
+              "explanation": "Gabarito oficial: C. O tamanho do item bloqueado define a GRANULARIDADE do bloqueio (fina = campo; grossa = tabela/banco), afetando concorrência x overhead."
+            },
+            {
+              "id": "pf_ti_q6",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Um SGBD precisa controlar o estado de suas transações. Quais são os possíveis estados de uma transação?",
+              "code": null,
+              "options": [
+                "Ativo, Parcialmente Confirmada, Confirmada, Falha e Terminada.",
+                "Ativo, Confirmada, Confirmada Duplamente e Não Confirmada.",
+                "Rodando, Confirmada e Cancelada.",
+                "Início, Fim, Leitura/Escrita, Consolidada e Abortada.",
+                "Início, Fim, Leitura/Escrita, Rollback e Commit."
+              ],
+              "answerIndex": 0,
+              "explanation": "Gabarito oficial: A. O ciclo de vida de uma transação é: Ativa → Parcialmente Confirmada → Confirmada, ou → Falha → Terminada (encerrada)."
+            },
+            {
+              "id": "pf_ti_q7",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) O projeto lógico de banco de dados relacional é a transformação de um _______ para um _______. A transformação inversa chama-se _______.",
+              "code": null,
+              "options": [
+                "modelo Entidade-Relacionamento (ER) – modelo físico – engenharia inversa",
+                "modelo Entidade-Relacionamento (ER) – modelo relacional – engenharia reversa",
+                "modelo relacional – modelo Entidade-Relacionamento (ER) – engenharia reversa",
+                "modelo Entidade-Relacionamento (ER) – modelo relacional – álgebra relacional",
+                "modelo Entidade-Relacionamento (ER) – modelo Objeto-Relacional (OR) – álgebra relacional"
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B. O projeto lógico converte o modelo ER (conceitual) no modelo relacional (tabelas); o caminho inverso (relacional → ER) é a engenharia reversa."
+            },
+            {
+              "id": "pf_ti_q8",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Sobre a especificação de interfaces entre componentes de software, analise:\nI. É importante definir atributos nas interfaces, mas evitar definir as operações de acesso e atualização de seus dados.\nII. Interfaces devem permitir que outras partes do sistema sejam projetadas em paralelo.\nIII. Um objeto deve ter no máximo uma interface.\nQuais estão corretas?",
+              "code": null,
+              "options": [
+                "Apenas I.",
+                "Apenas II.",
+                "Apenas I e II.",
+                "Apenas II e III.",
+                "I, II e III."
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B (apenas II). Interfaces expõem operações (não atributos), viabilizando o projeto em paralelo; um objeto pode ter várias interfaces, logo I e III são falsas."
+            },
+            {
+              "id": "pf_ti_q9",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Sobre índices em um Oracle Database, assinale a alternativa INCORRETA.",
+              "code": null,
+              "options": [
+                "Uma entrada de índice B-tree aponta para uma única linha.",
+                "Índices podem ser únicos ou não únicos.",
+                "B-tree é o tipo de índice padrão do Oracle.",
+                "Índices bitmap geralmente ocupam menos espaço.",
+                "Índices bitmap otimizam a escrita concorrente."
+              ],
+              "answerIndex": 4,
+              "explanation": "Gabarito oficial: E (a incorreta). Índices bitmap são ótimos para leitura/consultas analíticas, mas PREJUDICAM a escrita concorrente (DML), pois bloqueiam muitos registros — não a otimizam."
+            },
+            {
+              "id": "pf_ti_q10",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Sobre Modelagem Dimensional, analise:\nI. Modelagem dimensional utiliza o modelo relacional.\nII. Um diagrama ER geralmente pode ser representado por múltiplos diagramas dimensionais.\nIII. É difícil prever as estratégias de otimização de consultas em modelos dimensionais, porque suas estruturas são muito variáveis.\nQuais estão INCORRETAS?",
+              "code": null,
+              "options": [
+                "Apenas I.",
+                "Apenas II.",
+                "Apenas III.",
+                "Apenas I e III.",
+                "I, II e III."
+              ],
+              "answerIndex": 2,
+              "explanation": "Gabarito oficial: C (apenas III é incorreta). Modelos dimensionais (star schema) são padronizados e previsíveis para otimização — o contrário do que a III afirma. I e II são verdadeiras."
+            },
+            {
+              "id": "pf_ti_q11",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Em transações interativas que gravam a saída de um dado em tela, há risco de mostrar um valor ainda não confirmado. Uma técnica para lidar com isso é:",
+              "code": null,
+              "options": [
+                "Utilizar bloqueios binários nas tabelas.",
+                "Utilizar bloqueios compartilhados/exclusivos nas tabelas.",
+                "Utilizar Deadlocks.",
+                "Utilizar bloqueio iterativo de transação.",
+                "Adiar a saída para a tela até a completa confirmação da transação."
+              ],
+              "answerIndex": 4,
+              "explanation": "Gabarito oficial: E. Para evitar exibir dado não confirmado (leitura suja), adia-se a saída até o COMMIT da transação."
+            },
+            {
+              "id": "pf_ti_q12",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Qual código, na //Lacuna, geraria ERRO DE COMPILAÇÃO em Java 8?",
+              "code": "int a = 3;\ndouble b = 4.3;\nshort c = 1;\nlong d = 2;\n//Lacuna",
+              "options": [
+                "b = a;",
+                "b = c;",
+                "a = c;",
+                "d = a;",
+                "c = a;"
+              ],
+              "answerIndex": 4,
+              "explanation": "Gabarito oficial: E. Atribuir 'c = a' (short = int) é uma conversão estreitadora (narrowing) e exige cast explícito, gerando erro. As demais são conversões ampliadoras, permitidas automaticamente."
+            },
+            {
+              "id": "pf_ti_q13",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) O programador obtém 'cannot find symbol: class List / class ArrayList' ao compilar. Qual é uma solução possível?",
+              "code": "List<String> lista = new ArrayList<>();\nlista.add(\"S\"); lista.add(\"P\");\nlista.add(\"G\"); lista.add(\"G\");",
+              "options": [
+                "Adicionar o diretório da JDK 8 à variável LIB_JAVA_PATH.",
+                "Incluir o diretório \"bin\" da JDK 8 na variável PATH.",
+                "Alterar a linha para List<String> lista = new ArrayList<String>();",
+                "Adicionar \"import java.util.*;\" antes da declaração da classe.",
+                "Adicionar \"import java.Collections.*;\" antes da declaração da classe."
+              ],
+              "answerIndex": 3,
+              "explanation": "Gabarito oficial: D. List e ArrayList estão no pacote java.util; o erro é falta do import 'import java.util.*;'."
+            },
+            {
+              "id": "pf_ti_q14",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Dado o script PHP de um ônibus (lotação máxima 40), qual o valor de $passageiros ao final da execução das três chamadas de sobedesce($entrada,$saida)?",
+              "code": "$onibus = new Onibus;\n$onibus->sobedesce(6,0);\n$onibus->sobedesce(5,1);\n$onibus->sobedesce(3,2);\n// saldo = passageiros + entrada - saida",
+              "options": [
+                "8",
+                "10",
+                "11",
+                "15",
+                "40"
+              ],
+              "answerIndex": 2,
+              "explanation": "Gabarito oficial: C (11). Saldo = passageiros + entrada − saída. (6,0)→6; (5,1)→6+5−1=10; (3,2)→10+3−2=11. Nenhum passa de 40."
+            },
+            {
+              "id": "pf_ti_q15",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) No projeto lógico de um banco de dados relacional, após traduzir as entidades para tabelas, a tradução dos relacionamentos binários é feita de três formas básicas:\nI. Criação de tabela própria para o relacionamento.\nII. Adição de colunas em uma tabela de entidade.\nIII. Adição de registros em uma tabela de entidade.\nIV. Fusão de tabelas de relacionamentos.\nV. Fusão de tabelas de entidades.\nQuais estão corretas?",
+              "code": null,
+              "options": [
+                "Apenas I, II e III.",
+                "Apenas I, II e IV.",
+                "Apenas I, II e V.",
+                "Apenas II, III e IV.",
+                "Apenas II, III e V."
+              ],
+              "answerIndex": 2,
+              "explanation": "Gabarito oficial: C. Relacionamentos binários traduzem-se por: tabela própria (N:N), adição de colunas/FK numa entidade (1:N) ou fusão de tabelas de entidades (1:1). Adicionar registros e fundir tabelas de relacionamento não são formas válidas."
+            },
+            {
+              "id": "pf_ti_q16",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Analisando apenas o conteúdo do arquivo CSV abaixo (sem semântica), qual seria a chave mais apropriada?",
+              "code": "C1,C2,C3,C4\n1,a,x,02\n2,d,y,14\n1,a,x,05\n2,d,y,01\n1,e,x,13\n2,d,y,16\n1,a,x,08",
+              "options": [
+                "Apenas C2.",
+                "Apenas C4.",
+                "Apenas C3.",
+                "C1 e C2.",
+                "C1 e C3."
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B. Só a coluna C4 possui valores todos distintos (02,14,05,01,13,16,08), logo identifica unicamente cada linha; as demais repetem valores."
+            }
+          ]
+        },
+        {
+          "id": "pf_leg",
+          "title": "Prova FUNDATEC — Legislação",
+          "subtitle": "Questões reais federais (CF, Maria da Penha, Improbidade)",
+          "icon": "gavel",
+          "color": "0xFF9B59B6",
+          "teaching": [
+            {
+              "title": "Reais e alinhadas ao seu edital",
+              "body": "Selecionei da prova FUNDATEC (SPGG/RS 2022) apenas as questões de legislação FEDERAL que também constam no edital de Novo Hamburgo: Constituição Federal, Lei Maria da Penha, Improbidade Administrativa e Estatuto da Igualdade Racial. As questões de legislação estadual do RS daquela prova foram deixadas de fora por não caírem no seu concurso.",
+              "code": null,
+              "linksTo": "Origem e recorte das questões."
+            }
+          ],
+          "questions": [
+            {
+              "id": "pf_leg_q1",
+              "difficulty": 1,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Segundo a Constituição Federal, é condição de elegibilidade para o cargo de Juiz de Paz a idade mínima de:",
+              "code": null,
+              "options": [
+                "18 anos.",
+                "21 anos.",
+                "25 anos.",
+                "30 anos.",
+                "35 anos."
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B (21 anos). A CF (art. 14, §3º, VI) fixa idade mínima de 21 anos para Juiz de Paz, Deputado, Prefeito e Vereador em alguns casos — para Juiz de Paz é 21."
+            },
+            {
+              "id": "pf_leg_q2",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) A respeito da Lei nº 11.340/2006 (Lei Maria da Penha), assinale a alternativa correta.",
+              "code": null,
+              "options": [
+                "Cabe, exclusivamente, à sociedade e ao poder público criar as condições para o exercício dos direitos enunciados no caput.",
+                "São formas de violência doméstica e familiar contra a mulher a violência física, a psicológica, a sexual, a patrimonial e a moral.",
+                "A política pública para coibir a violência far-se-á exclusivamente por ações da União, dos Estados e do DF.",
+                "O juiz determinará, por prazo indeterminado, a inclusão da mulher em cadastro de programas assistenciais.",
+                "Os entes darão prioridade, no âmbito da Polícia Civil, à criação de Delegacias Especializadas (Deams)."
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B. O art. 7º da Lei Maria da Penha define cinco formas de violência: física, psicológica, sexual, patrimonial e moral."
+            },
+            {
+              "id": "pf_leg_q3",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Na forma da Lei nº 8.429/1992 (Improbidade Administrativa), constitui ato que importa ENRIQUECIMENTO ILÍCITO:",
+              "code": null,
+              "options": [
+                "Receber vantagem econômica, direta ou indireta, para tolerar a exploração ou prática de jogos de azar, contrabando, usura ou outra atividade ilícita.",
+                "Permitir ou facilitar a aquisição, permuta ou locação de bem ou serviço por preço superior ao de mercado.",
+                "Realizar operação financeira sem observância das normas legais e regulamentares.",
+                "Conceder benefício administrativo ou fiscal sem observância das formalidades legais.",
+                "Frustrar a licitude de processo licitatório, acarretando perda patrimonial efetiva."
+              ],
+              "answerIndex": 0,
+              "explanation": "Gabarito oficial: A. Auferir vantagem indevida em razão do cargo é enriquecimento ilícito (art. 9º). As demais causam prejuízo ao erário (art. 10)."
+            },
+            {
+              "id": "pf_leg_q4",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Segundo a Constituição Federal, é brasileiro NATURALIZADO:",
+              "code": null,
+              "options": [
+                "O nascido no Brasil, ainda que de pais estrangeiros, desde que estes não estejam a serviço de seu país.",
+                "O nascido no estrangeiro, de pai ou mãe brasileira, desde que qualquer deles esteja a serviço do Brasil.",
+                "O nascido no estrangeiro de pai ou mãe brasileira, registrado em repartição brasileira competente.",
+                "O nascido no estrangeiro de pai ou mãe brasileira que venha a residir no Brasil e opte pela nacionalidade.",
+                "O estrangeiro de qualquer nacionalidade, residente no Brasil há mais de quinze anos ininterruptos e sem condenação penal, que requeira a nacionalidade brasileira."
+              ],
+              "answerIndex": 4,
+              "explanation": "Gabarito oficial: E. As opções A a D descrevem brasileiro NATO (art. 12, I). A naturalização de estrangeiro de qualquer nacionalidade exige residência por mais de 15 anos ininterruptos e ausência de condenação penal (art. 12, II, b)."
+            },
+            {
+              "id": "pf_leg_q5",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Analise à luz da Constituição Federal:\nI. É vedada a vinculação ou equiparação de quaisquer espécies remuneratórias para efeito de remuneração de pessoal do serviço público.\nII. Os acréscimos pecuniários percebidos por servidor não serão computados nem acumulados para fins de concessão de acréscimos ulteriores.\nIII. A administração fazendária e seus servidores fiscais terão, em suas áreas de competência, precedência sobre os demais setores administrativos, na forma da lei.\nQuais estão corretas?",
+              "code": null,
+              "options": [
+                "Apenas III.",
+                "Apenas I e II.",
+                "Apenas I e III.",
+                "Apenas II e III.",
+                "I, II e III."
+              ],
+              "answerIndex": 4,
+              "explanation": "Gabarito oficial: E (I, II e III). Todas reproduzem incisos do art. 37 da CF (XIII, XIV e XVIII), sobre remuneração e administração fazendária."
+            },
+            {
+              "id": "pf_leg_q6",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) A Lei nº 12.288/2010 instituiu o Estatuto da Igualdade Racial. Assinale a alternativa correta.",
+              "code": null,
+              "options": [
+                "Considera-se DESIGUALDADE racial toda distinção, exclusão, restrição ou preferência baseada em raça, cor, descendência ou origem étnica que anule ou restrinja direitos.",
+                "O Estatuto adota como diretriz político-jurídica a inclusão das vítimas de desigualdade étnico-racial, a valorização da igualdade étnica e o fortalecimento da identidade nacional brasileira.",
+                "Os programas de ação afirmativa reparam distorções e práticas discriminatórias adotadas, nas esferas pública e privada, após sua edição.",
+                "Os conteúdos referentes à história da população negra serão ministrados apenas no ensino superior.",
+                "O poder público promoverá ações apenas para o financiamento industrial da população negra."
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B. A opção A confunde 'desigualdade racial' com a definição de DISCRIMINAÇÃO racial. A alternativa correta reproduz as diretrizes político-jurídicas do Estatuto (art. 4º)."
+            }
+          ]
+        },
+        {
+          "id": "pf_rl",
+          "title": "Prova FUNDATEC — Raciocínio Lógico",
+          "subtitle": "Questões reais: tabela-verdade, quantificadores e equivalências",
+          "icon": "psychology",
+          "color": "0xFF16A085",
+          "teaching": [
+            {
+              "title": "Lógica no estilo da banca",
+              "body": "Questões reais de Raciocínio Lógico-Matemático da FUNDATEC (SPGG/RS 2022). Reforçam número de linhas da tabela-verdade (2^n), negação de quantificadores, dedução e a equivalência da condicional (p→q ≡ ~p∨q).",
+              "code": null,
+              "linksTo": "Origem das questões de lógica."
+            }
+          ],
+          "questions": [
+            {
+              "id": "pf_rl_q1",
+              "difficulty": 1,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Considere a proposição \"A quantidade de vacinados aumenta OU o número de infectados será maior\". O número de linhas da tabela-verdade dessa proposição é:",
+              "code": null,
+              "options": [
+                "2.",
+                "4.",
+                "6.",
+                "8.",
+                "16."
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B (4). São 2 proposições simples; a tabela-verdade tem 2^n = 2^2 = 4 linhas."
+            },
+            {
+              "id": "pf_rl_q2",
+              "difficulty": 1,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Sabendo que (1) Todo triângulo equilátero é isósceles e (2) ABC é um triângulo equilátero, deduz-se que:",
+              "code": null,
+              "options": [
+                "ABC é um triângulo isósceles.",
+                "ABC não é um triângulo isósceles.",
+                "Todo triângulo isósceles é equilátero.",
+                "Nenhum triângulo equilátero é isósceles.",
+                "ABC não é triângulo."
+              ],
+              "answerIndex": 0,
+              "explanation": "Gabarito oficial: A. Se todo equilátero é isósceles e ABC é equilátero, então, por dedução direta (modus ponens), ABC é isósceles."
+            },
+            {
+              "id": "pf_rl_q3",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Os conectivos lógicos conectam proposições. A alternativa que apresenta uma DISJUNÇÃO, uma CONJUNÇÃO e uma CONDICIONAL, nessa ordem, é:",
+              "code": null,
+              "options": [
+                "p→q, p∨q e p∧q",
+                "p→q, p∧q e p∨q",
+                "p∨q, p∧q e p→q",
+                "p∧q, p∨q e p→q",
+                "p∨q, p→q e p∧q"
+              ],
+              "answerIndex": 2,
+              "explanation": "Gabarito oficial: C. Disjunção = ∨, conjunção = ∧, condicional = →. Na ordem pedida: p∨q, p∧q e p→q."
+            },
+            {
+              "id": "pf_rl_q4",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) A negação da proposição \"Existe triângulo equilátero que não é isósceles\" é:",
+              "code": null,
+              "options": [
+                "Existe triângulo equilátero que é isósceles.",
+                "Existe triângulo isósceles que não é equilátero.",
+                "Existe triângulo que não é isósceles nem equilátero.",
+                "Todo triângulo equilátero não é isósceles.",
+                "Todo triângulo equilátero é isósceles."
+              ],
+              "answerIndex": 4,
+              "explanation": "Gabarito oficial: E. A negação de \"existe x que não é P\" é \"todo x é P\": logo, \"Todo triângulo equilátero é isósceles\"."
+            },
+            {
+              "id": "pf_rl_q5",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Uma proposição equivalente a \"Se o sol nasce, então os pássaros cantam\" é:",
+              "code": null,
+              "options": [
+                "O sol nasce e os pássaros cantam.",
+                "Se o sol não nasce, então os pássaros não cantam.",
+                "O sol não nasce ou os pássaros não cantam.",
+                "O sol não nasce ou os pássaros cantam.",
+                "Se os pássaros cantam, então o sol nasce."
+              ],
+              "answerIndex": 3,
+              "explanation": "Gabarito oficial: D. A condicional p→q equivale a ~p∨q: \"o sol não nasce OU os pássaros cantam\"."
+            }
+          ]
+        },
+        {
+          "id": "pf_pt",
+          "title": "Prova FUNDATEC — Português",
+          "subtitle": "Questões reais: crase, 'porque', reescrita e classes",
+          "icon": "menu_book",
+          "color": "0xFFFF9600",
+          "teaching": [
+            {
+              "title": "Gramática do jeito da banca",
+              "body": "Questões REAIS de Língua Portuguesa da FUNDATEC (SPGG/RS 2022), com gabarito oficial. Reforçam justamente o que a banca mais cobra: acento de crase, emprego de 'por que/porque', reescrita/transcrição de trechos e identificação de classes de palavras (contagem de artigos).",
+              "code": null,
+              "linksTo": "Origem das questões de português."
+            }
+          ],
+          "questions": [
+            {
+              "id": "pf_pt_q1",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Considerando o emprego do acento indicativo de crase, assinale a alternativa que preenche correta e respectivamente as lacunas:\n\"habilidade aplicável ___ qualquer outra área\";\n\"em meio ___ uma tempestade\";\n\"sem o direito ___ educação\".",
+              "code": null,
+              "options": [
+                "a – à – à",
+                "a – a – à",
+                "à – a – à",
+                "à – a – a",
+                "a – à – a"
+              ],
+              "answerIndex": 1,
+              "explanation": "Gabarito oficial: B (a – a – à). Não há crase antes de \"qualquer\" nem de \"uma\" (artigo indefinido); há crase em \"direito à educação\" (preposição a + artigo a)."
+            },
+            {
+              "id": "pf_pt_q2",
+              "difficulty": 2,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Assinale a alternativa que apresenta a transcrição INCORRETA do trecho \"o modelo fordista de escola precisa mudar\".",
+              "code": null,
+              "options": [
+                "É preciso que o modelo fordista de escola mude.",
+                "É preciso que haja mudança no modelo fordista de escola.",
+                "É preciso que o modelo fordista de escola seja mudado.",
+                "O modelo fordista de educação precisa de mudança.",
+                "O modelo fordista de educação precisa-se de mudança."
+              ],
+              "answerIndex": 4,
+              "explanation": "Gabarito oficial: E. \"precisa-se de mudança\" é incorreto: com sujeito determinado (\"o modelo... precisa\"), não cabe a partícula \"se\". As demais são reescritas válidas."
+            },
+            {
+              "id": "pf_pt_q3",
+              "difficulty": 3,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Assinale o número correto de artigos (inclusive contraídos ou combinados) no trecho: \"Além do modelo híbrido, é preciso aprofundar o que queremos das escolas; qual ambiente físico melhor acolhe e estimula em uma era de uso exacerbado das tecnologias\".",
+              "code": null,
+              "options": [
+                "2.",
+                "3.",
+                "4.",
+                "5.",
+                "6."
+              ],
+              "answerIndex": 3,
+              "explanation": "Gabarito oficial: D (5). São artigos: do (de+o), o, das (de+as), uma e das (de+as) = 5."
+            },
+            {
+              "id": "pf_pt_q4",
+              "difficulty": 1,
+              "prompt": "(FUNDATEC/SPGG-RS 2022) Assinale a alternativa que introduz corretamente a RESPOSTA a uma pergunta iniciada por \"Por que...\":",
+              "code": null,
+              "options": [
+                "Por que o modelo fordista de educação precisa mudar.",
+                "Por quê o modelo fordista de educação precisa mudar.",
+                "Porquê o modelo fordista de educação precisa mudar.",
+                "Porque o modelo fordista de educação precisa mudar.",
+                "Pôr que o modelo fordista de educação precisa mudar."
+              ],
+              "answerIndex": 3,
+              "explanation": "Gabarito oficial: D. Respostas e explicações usam \"porque\" (junto e átono); \"por que\" (separado) inicia perguntas."
             }
           ]
         }
