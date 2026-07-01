@@ -9,6 +9,11 @@ class Subject {
   final String subtitle;
   final String icon;
   final int color;
+
+  /// Grupo ao qual a matéria pertence na tela inicial (ex.: "Faculdade" ou
+  /// "Concurso — Analista de Sistemas"). Matérias sem [track] caem no grupo
+  /// padrão.
+  final String track;
   final List<StudyModule> modules;
 
   const Subject({
@@ -17,6 +22,7 @@ class Subject {
     required this.subtitle,
     required this.icon,
     required this.color,
+    required this.track,
     required this.modules,
   });
 
@@ -34,6 +40,7 @@ class Subject {
       subtitle: json['subtitle'] as String? ?? '',
       icon: json['icon'] as String? ?? 'school',
       color: int.parse(json['color'] as String? ?? '0xFF58CC02'),
+      track: json['track'] as String? ?? 'Meus estudos',
       modules: (json['modules'] as List)
           .map((m) => StudyModule.fromJson(m as Map<String, dynamic>))
           .toList(),
