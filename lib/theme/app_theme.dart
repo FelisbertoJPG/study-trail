@@ -51,6 +51,21 @@ class AppTheme {
         'person' => Icons.person,
         'timeline' => Icons.timeline,
         'extension' => Icons.extension,
+        // Trilha de concurso
+        'memory' => Icons.memory,
+        'loop' => Icons.loop,
+        'security' => Icons.security,
+        'gavel' => Icons.gavel,
+        'balance' => Icons.balance,
+        'menu_book' => Icons.menu_book,
+        'spellcheck' => Icons.spellcheck,
+        'article' => Icons.article,
+        'calculate' => Icons.calculate,
+        'percent' => Icons.percent,
+        'psychology' => Icons.psychology,
+        'functions' => Icons.functions,
+        'public' => Icons.public,
+        'location_city' => Icons.location_city,
         _ => Icons.school,
       };
 }
