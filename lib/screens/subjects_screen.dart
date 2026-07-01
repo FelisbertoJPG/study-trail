@@ -25,27 +25,62 @@ class SubjectsScreen extends StatelessWidget {
               padding: EdgeInsets.zero,
               children: [
                 const _Header(),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 18, 16, 8),
-                  child: Text(
-                    'MATÉRIAS',
-                    style: TextStyle(
-                      color: Colors.grey.shade600,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 13,
-                      letterSpacing: 1,
-                    ),
-                  ),
-                ),
-                ...curriculum.subjects.map(
-                  (s) => Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 14),
-                    child: _SubjectCard(subject: s),
-                  ),
-                ),
+                ..._buildTrackSections(),
+                const SizedBox(height: 12),
               ],
             );
           },
+        ),
+      ),
+    );
+  }
+
+  /// Agrupa as matérias por [Subject.track], preservando a ordem em que
+  /// aparecem no JSON, e renderiza cada grupo com um cabeçalho próprio
+  /// (ex.: "FACULDADE" e "CONCURSO — ANALISTA DE SISTEMAS...").
+  List<Widget> _buildTrackSections() {
+    final order = <String>[];
+    final grouped = <String, List<Subject>>{};
+    for (final s in curriculum.subjects) {
+      if (!grouped.containsKey(s.track)) {
+        order.add(s.track);
+        grouped[s.track] = [];
+      }
+      grouped[s.track]!.add(s);
+    }
+
+    final widgets = <Widget>[];
+    for (final track in order) {
+      widgets.add(_TrackHeader(label: track));
+      for (final s in grouped[track]!) {
+        widgets.add(
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 14),
+            child: _SubjectCard(subject: s),
+          ),
+        );
+      }
+    }
+    return widgets;
+  }
+}
+
+class _TrackHeader extends StatelessWidget {
+  final String label;
+  const _TrackHeader({required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 20, 16, 10),
+      child: Text(
+        label.toUpperCase(),
+        style: TextStyle(
+          color: Colors.grey.shade600,
+          fontWeight: FontWeight.w800,
+          fontSize: 13,
+          letterSpacing: 0.8,
+          height: 1.2,
         ),
       ),
     );
